@@ -15,7 +15,8 @@ namespace PointOfSale
     public partial class FormBuy : Form
     {
         DataTable dtSuppleir, dtBranch;
-        DataTable dtBuyBills;
+        DataTable dtBuyBill;
+        DataTable dtBuy;
         DataTable dtLogInEmp = MyGlobals.dtLogInEmp;
         DataTable  dtCurrentEmp = MyGlobals.dtCurrentEmp;
         BindingSource bsSupplier = new BindingSource();
@@ -87,7 +88,11 @@ namespace PointOfSale
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-
+            if (MessageBox.Show ("จะลบบิลใช่มั้ย", "ลบบิล", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+            {   // ลบ record ใน Database
+                string command = "DELETE FROM BuyBill WHERE id = " + ((DataRowView)(bsBuyBill.Current)).Row["id"].ToString();
+                Helper.ExecuteNonQuery(command, CommandType.Text);
+            }
         }
         SqlParameter[] getValueFromControls()
         {
@@ -159,7 +164,9 @@ namespace PointOfSale
             {
                 thisID = InsertBill();
                 dtNewBill = SelectBill("WHERE BuyBill.id = " + thisID.ToString());
-                dtBuyBills.ImportRow(dtNewBill.Rows[0]);            // update DataTable ให้ตรงกับที่ select มา  
+                bsBuyBill.CancelEdit(); // cancel ก่อน เพื่อทำลาย ข้อมูลที่ AddNew เข้ามา แต่ยังไม่เข้าไปที่ DataTable
+                dtBuyBill.ImportRow(dtNewBill.Rows[0]);            // importRow จะสร้าง row ใหม่  
+                bsBuyBill.MoveLast(); // เลื่อนไป record ที่เพิ่งเพิ่มเข้ามา
             }
             else // Editing
             {
@@ -167,7 +174,7 @@ namespace PointOfSale
                 thisID = int.Parse(inbID.Text);
                 DataRow newRow = (SelectBill("WHERE BuyBill.id = " + thisID.ToString())).Rows[0];
                 // Copy ค่า ที่ไม่ได้ Bind เอาไว้
-                DataRow thisRow = dtBuyBills.Rows[bsBuyBill.Position];
+                DataRow thisRow = dtBuyBill.Rows[bsBuyBill.Position];
                 thisRow["checkEmpID"] = newRow["checkEmpID"];
                 thisRow["checkEmpName"] = newRow["checkEmpName"];
                 thisRow["barcodeEmpID"] = newRow["barcodeEmpID"];
@@ -198,6 +205,41 @@ namespace PointOfSale
             SetFormState(EditState.Viewing);
         }
 
+        private DataTable SelectItem ()
+        {
+            return (Helper.LoadSql("SELECT id, buyBillID, productID, brandName, modelCode, colorName, " +
+                "sizeSetID, sizeSetName, sets, units, cost,  units * cost AS amount, remark, " +
+                "deviceID, deviceName, keyInEmpID, keyInEmpName, keyInDateTime, updated, updateBy " +
+                "FROM (SELECT  dbo.Buy.*, dbo.Brand.name AS brandName, dbo.Model.code AS modelCode, dbo.Color.name AS colorName, " +
+                "dbo.SizeSet.name AS sizeSetName, dbo.Device.name AS deviceName, dbo.Emp.name AS keyInEmpName, " +
+                "(SELECT COUNT(id) FROM dbo.ProductItem WHERE(buyID = dbo.Buy.id)) AS units " +
+                "FROM dbo.Color RIGHT OUTER JOIN dbo.Product ON dbo.Color.id = dbo.Product.colorID RIGHT OUTER JOIN dbo.SizeSet RIGHT OUTER JOIN " +
+                "dbo.Buy ON dbo.SizeSet.id = dbo.Buy.sizeSetID ON dbo.Product.id = dbo.Buy.productID LEFT OUTER JOIN dbo.Brand RIGHT OUTER JOIN " +
+                "dbo.Model ON dbo.Brand.id = dbo.Model.brandID ON dbo.Product.modelID = dbo.Model.id LEFT OUTER JOIN dbo.Emp ON dbo.Buy.keyInEmpID = dbo.Emp.id LEFT OUTER JOIN " +
+                "dbo.Device ON dbo.Buy.deviceID = dbo.Device.id WHERE(dbo.Buy.buyBillID = " + ((DataRowView)bsBuyBill.Current).Row["id"].ToString() + ")) AS t1"));
+        }
+        
+        private void updateBillAmount()
+        {
+            decimal temp =  dtBuy.AsEnumerable().Sum(b => b.Field<decimal>("amount"));
+            dcbBillAmount.Value = temp;
+            dcbBilltotal.Value = temp - dcbDiscount.Value;
+        }
+
+        private void bsBuyBill_PositionChanged(object sender, EventArgs e)
+        {
+            // Load รายการซื้อ
+            if (billState == EditState.Adding)
+            {
+                // ในขณะที่ Add dt ไม่มีอะไร ซ่อน Grid หรือ clear Grid
+                // ((DataRowView)bsBuyBill.Current).Row["id"].ToString();
+                return;
+            }
+            dtBuy = SelectItem();
+            bsBuy.DataSource = dtBuy;
+            updateBillAmount();
+        }
+
         public FormBuy()
         {
             InitializeComponent();
@@ -217,6 +259,8 @@ namespace PointOfSale
                 "dbo.Emp AS ModelInfoEmp ON dbo.BuyBill.modelInfoEmpID = ModelInfoEmp.id LEFT OUTER JOIN " +
                 "dbo.Emp AS KeyInEmp ON dbo.BuyBill.keyInEmpID = KeyInEmp.id " + criteria ));
         }
+
+
         private void FormBuy_Load(object sender, EventArgs e)
         {
 
@@ -241,8 +285,8 @@ namespace PointOfSale
             cmbKeyInEmp.DataSource = bsKeyInEmp;
             // ** หมายเหตุ DisplayMember = "name" ValueMember = "id" เซ็ตไว้ใน property ขี้เกียจพิมพ์
             // โหลด BuyBill
-            dtBuyBills = SelectBill(strBuyBillCriteria);
-            bsBuyBill.DataSource = dtBuyBills;
+            dtBuyBill = SelectBill(strBuyBillCriteria);
+            bsBuyBill.DataSource = dtBuyBill;
             bsBuyBill.MoveLast();
 
 

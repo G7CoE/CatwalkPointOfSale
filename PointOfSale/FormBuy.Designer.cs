@@ -172,7 +172,6 @@ namespace PointOfSale
             this.btnEditItem = new System.Windows.Forms.Button();
             this.dcbBilltotal = new MyControls.CurrencyBox();
             this.cmbCheckEmpEdit = new MyControls.MyCombo();
-            this.bsBuyBill = new System.Windows.Forms.BindingSource(this.components);
             this.btnDeleteItem = new System.Windows.Forms.Button();
             this.dcbBillAmount = new MyControls.CurrencyBox();
             this.dcbDiscount = new MyControls.CurrencyBox();
@@ -210,6 +209,26 @@ namespace PointOfSale
             this.txtBillRemark = new MyControls.StrBox();
             this.cmbSupplier = new MyControls.MyCombo();
             this.cmbBranch = new MyControls.MyCombo();
+            this.bsBuy = new System.Windows.Forms.BindingSource(this.components);
+            this.bsBuyBill = new System.Windows.Forms.BindingSource(this.components);
+            this.brandNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.modelCodeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colorNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sizeSetNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.deviceNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.keyInEmpNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.buyBillIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.costDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.setsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sizeSetIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.remarkDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.deviceIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.keyInEmpIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.keyInDateTimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.updatedDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.updateByDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             label4 = new System.Windows.Forms.Label();
             label19 = new System.Windows.Forms.Label();
             label3 = new System.Windows.Forms.Label();
@@ -257,11 +276,12 @@ namespace PointOfSale
             this.sizePanel3.SuspendLayout();
             this.myPanel10.SuspendLayout();
             this.BottomPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bsBuyBill)).BeginInit();
             this.headPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.buyBillnav)).BeginInit();
             this.buyBillnav.SuspendLayout();
             this.billInfoPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bsBuy)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsBuyBill)).BeginInit();
             this.SuspendLayout();
             // 
             // label4
@@ -615,8 +635,29 @@ namespace PointOfSale
             this.dgvBuyView.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.Beige;
             this.dgvBuyView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvBuyView.AutoGenerateColumns = false;
             this.dgvBuyView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dgvBuyView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvBuyView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.brandNameDataGridViewTextBoxColumn,
+            this.modelCodeDataGridViewTextBoxColumn,
+            this.colorNameDataGridViewTextBoxColumn,
+            this.sizeSetNameDataGridViewTextBoxColumn,
+            this.deviceNameDataGridViewTextBoxColumn,
+            this.keyInEmpNameDataGridViewTextBoxColumn,
+            this.idDataGridViewTextBoxColumn,
+            this.buyBillIDDataGridViewTextBoxColumn,
+            this.productIDDataGridViewTextBoxColumn,
+            this.costDataGridViewTextBoxColumn,
+            this.setsDataGridViewTextBoxColumn,
+            this.sizeSetIDDataGridViewTextBoxColumn,
+            this.remarkDataGridViewTextBoxColumn,
+            this.deviceIDDataGridViewTextBoxColumn,
+            this.keyInEmpIDDataGridViewTextBoxColumn,
+            this.keyInDateTimeDataGridViewTextBoxColumn,
+            this.updatedDataGridViewTextBoxColumn,
+            this.updateByDataGridViewTextBoxColumn});
+            this.dgvBuyView.DataSource = this.bsBuy;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
@@ -1974,11 +2015,6 @@ namespace PointOfSale
             this.cmbCheckEmpEdit.ValueMember = "id";
             this.cmbCheckEmpEdit.Visible = false;
             // 
-            // bsBuyBill
-            // 
-            this.bsBuyBill.AllowNew = true;
-            this.bsBuyBill.DataSource = typeof(PointOfSale.DbClass.BuyBillView);
-            // 
             // btnDeleteItem
             // 
             this.btnDeleteItem.BackColor = System.Drawing.Color.Crimson;
@@ -2400,6 +2436,7 @@ namespace PointOfSale
             // txtBillRemark
             // 
             this.txtBillRemark.Cue = null;
+            this.txtBillRemark.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsBuyBill, "remark", true));
             this.txtBillRemark.Location = new System.Drawing.Point(78, 107);
             this.txtBillRemark.Margin = new System.Windows.Forms.Padding(4);
             this.txtBillRemark.Name = "txtBillRemark";
@@ -2435,6 +2472,142 @@ namespace PointOfSale
             this.cmbBranch.Size = new System.Drawing.Size(95, 24);
             this.cmbBranch.TabIndex = 4;
             this.cmbBranch.ValueMember = "id";
+            // 
+            // bsBuy
+            // 
+            this.bsBuy.DataSource = typeof(PointOfSale.DbClass.BuyView);
+            // 
+            // bsBuyBill
+            // 
+            this.bsBuyBill.AllowNew = true;
+            this.bsBuyBill.DataSource = typeof(PointOfSale.DbClass.BuyBillView);
+            this.bsBuyBill.PositionChanged += new System.EventHandler(this.bsBuyBill_PositionChanged);
+            // 
+            // brandNameDataGridViewTextBoxColumn
+            // 
+            this.brandNameDataGridViewTextBoxColumn.DataPropertyName = "brandName";
+            this.brandNameDataGridViewTextBoxColumn.HeaderText = "brandName";
+            this.brandNameDataGridViewTextBoxColumn.Name = "brandNameDataGridViewTextBoxColumn";
+            this.brandNameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // modelCodeDataGridViewTextBoxColumn
+            // 
+            this.modelCodeDataGridViewTextBoxColumn.DataPropertyName = "modelCode";
+            this.modelCodeDataGridViewTextBoxColumn.HeaderText = "modelCode";
+            this.modelCodeDataGridViewTextBoxColumn.Name = "modelCodeDataGridViewTextBoxColumn";
+            this.modelCodeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // colorNameDataGridViewTextBoxColumn
+            // 
+            this.colorNameDataGridViewTextBoxColumn.DataPropertyName = "colorName";
+            this.colorNameDataGridViewTextBoxColumn.HeaderText = "colorName";
+            this.colorNameDataGridViewTextBoxColumn.Name = "colorNameDataGridViewTextBoxColumn";
+            this.colorNameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // sizeSetNameDataGridViewTextBoxColumn
+            // 
+            this.sizeSetNameDataGridViewTextBoxColumn.DataPropertyName = "sizeSetName";
+            this.sizeSetNameDataGridViewTextBoxColumn.HeaderText = "sizeSetName";
+            this.sizeSetNameDataGridViewTextBoxColumn.Name = "sizeSetNameDataGridViewTextBoxColumn";
+            this.sizeSetNameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // deviceNameDataGridViewTextBoxColumn
+            // 
+            this.deviceNameDataGridViewTextBoxColumn.DataPropertyName = "deviceName";
+            this.deviceNameDataGridViewTextBoxColumn.HeaderText = "deviceName";
+            this.deviceNameDataGridViewTextBoxColumn.Name = "deviceNameDataGridViewTextBoxColumn";
+            this.deviceNameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // keyInEmpNameDataGridViewTextBoxColumn
+            // 
+            this.keyInEmpNameDataGridViewTextBoxColumn.DataPropertyName = "keyInEmpName";
+            this.keyInEmpNameDataGridViewTextBoxColumn.HeaderText = "keyInEmpName";
+            this.keyInEmpNameDataGridViewTextBoxColumn.Name = "keyInEmpNameDataGridViewTextBoxColumn";
+            this.keyInEmpNameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // buyBillIDDataGridViewTextBoxColumn
+            // 
+            this.buyBillIDDataGridViewTextBoxColumn.DataPropertyName = "buyBillID";
+            this.buyBillIDDataGridViewTextBoxColumn.HeaderText = "buyBillID";
+            this.buyBillIDDataGridViewTextBoxColumn.Name = "buyBillIDDataGridViewTextBoxColumn";
+            this.buyBillIDDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // productIDDataGridViewTextBoxColumn
+            // 
+            this.productIDDataGridViewTextBoxColumn.DataPropertyName = "productID";
+            this.productIDDataGridViewTextBoxColumn.HeaderText = "productID";
+            this.productIDDataGridViewTextBoxColumn.Name = "productIDDataGridViewTextBoxColumn";
+            this.productIDDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // costDataGridViewTextBoxColumn
+            // 
+            this.costDataGridViewTextBoxColumn.DataPropertyName = "cost";
+            this.costDataGridViewTextBoxColumn.HeaderText = "cost";
+            this.costDataGridViewTextBoxColumn.Name = "costDataGridViewTextBoxColumn";
+            this.costDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // setsDataGridViewTextBoxColumn
+            // 
+            this.setsDataGridViewTextBoxColumn.DataPropertyName = "sets";
+            this.setsDataGridViewTextBoxColumn.HeaderText = "sets";
+            this.setsDataGridViewTextBoxColumn.Name = "setsDataGridViewTextBoxColumn";
+            this.setsDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // sizeSetIDDataGridViewTextBoxColumn
+            // 
+            this.sizeSetIDDataGridViewTextBoxColumn.DataPropertyName = "sizeSetID";
+            this.sizeSetIDDataGridViewTextBoxColumn.HeaderText = "sizeSetID";
+            this.sizeSetIDDataGridViewTextBoxColumn.Name = "sizeSetIDDataGridViewTextBoxColumn";
+            this.sizeSetIDDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // remarkDataGridViewTextBoxColumn
+            // 
+            this.remarkDataGridViewTextBoxColumn.DataPropertyName = "remark";
+            this.remarkDataGridViewTextBoxColumn.HeaderText = "remark";
+            this.remarkDataGridViewTextBoxColumn.Name = "remarkDataGridViewTextBoxColumn";
+            this.remarkDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // deviceIDDataGridViewTextBoxColumn
+            // 
+            this.deviceIDDataGridViewTextBoxColumn.DataPropertyName = "deviceID";
+            this.deviceIDDataGridViewTextBoxColumn.HeaderText = "deviceID";
+            this.deviceIDDataGridViewTextBoxColumn.Name = "deviceIDDataGridViewTextBoxColumn";
+            this.deviceIDDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // keyInEmpIDDataGridViewTextBoxColumn
+            // 
+            this.keyInEmpIDDataGridViewTextBoxColumn.DataPropertyName = "keyInEmpID";
+            this.keyInEmpIDDataGridViewTextBoxColumn.HeaderText = "keyInEmpID";
+            this.keyInEmpIDDataGridViewTextBoxColumn.Name = "keyInEmpIDDataGridViewTextBoxColumn";
+            this.keyInEmpIDDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // keyInDateTimeDataGridViewTextBoxColumn
+            // 
+            this.keyInDateTimeDataGridViewTextBoxColumn.DataPropertyName = "keyInDateTime";
+            this.keyInDateTimeDataGridViewTextBoxColumn.HeaderText = "keyInDateTime";
+            this.keyInDateTimeDataGridViewTextBoxColumn.Name = "keyInDateTimeDataGridViewTextBoxColumn";
+            this.keyInDateTimeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // updatedDataGridViewTextBoxColumn
+            // 
+            this.updatedDataGridViewTextBoxColumn.DataPropertyName = "updated";
+            this.updatedDataGridViewTextBoxColumn.HeaderText = "updated";
+            this.updatedDataGridViewTextBoxColumn.Name = "updatedDataGridViewTextBoxColumn";
+            this.updatedDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // updateByDataGridViewTextBoxColumn
+            // 
+            this.updateByDataGridViewTextBoxColumn.DataPropertyName = "updateBy";
+            this.updateByDataGridViewTextBoxColumn.HeaderText = "updateBy";
+            this.updateByDataGridViewTextBoxColumn.Name = "updateByDataGridViewTextBoxColumn";
+            this.updateByDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // FormBuy
             // 
@@ -2474,7 +2647,6 @@ namespace PointOfSale
             this.myPanel10.PerformLayout();
             this.BottomPanel.ResumeLayout(false);
             this.BottomPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bsBuyBill)).EndInit();
             this.headPanel.ResumeLayout(false);
             this.headPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.buyBillnav)).EndInit();
@@ -2482,6 +2654,8 @@ namespace PointOfSale
             this.buyBillnav.PerformLayout();
             this.billInfoPanel.ResumeLayout(false);
             this.billInfoPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bsBuy)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsBuyBill)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2632,5 +2806,24 @@ namespace PointOfSale
         private MyControls.MyCombo cmbSupplier;
         private MyControls.MyCombo cmbBranch;
         private MyControls.MyCombo cmbKeyInEmp;
+        private System.Windows.Forms.BindingSource bsBuy;
+        private System.Windows.Forms.DataGridViewTextBoxColumn brandNameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn modelCodeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colorNameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sizeSetNameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn deviceNameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn keyInEmpNameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn buyBillIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn productIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn costDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn setsDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sizeSetIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn remarkDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn deviceIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn keyInEmpIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn keyInDateTimeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn updatedDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn updateByDataGridViewTextBoxColumn;
     }
 }

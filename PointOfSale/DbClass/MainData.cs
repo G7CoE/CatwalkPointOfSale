@@ -90,9 +90,34 @@ namespace PointOfSale.DbClass
 		public string barcodeEmpName2 { get; set; }
 		public string modelInfoEmpName { get; set; }
 		public string keyInEmpName { get; set; }
-
 	}
 
+	public class Buy
+    {
+		public int id { get; set; }
+		public int buyBillID { get; set; }
+		public int productID { get; set; }
+		public decimal? cost { get; set; }
+		public int? sets { get; set; }
+		public int? sizeSetID { get; set; }
+		public string remark { get; set; }
+		public int? deviceID { get; set; }
+		public int? keyInEmpID { get; set; }
+		public DateTime? keyInDateTime { get; set; }
+		public DateTime? updated { get; set; }
+		public string updateBy { get; set; }
+	}
+
+	public class BuyView : Buy
+    {
+		public string brandName { get; set; }
+		public string modelCode { get; set; }
+		public string colorName { get; set; }
+		public string sizeSetName { get; set; }
+		public string deviceName { get; set; }
+		public string keyInEmpName { get; set; }
+
+    }
 	#region Emp // Emp EmpType
 	public partial class Emp : BaseTable
 	{

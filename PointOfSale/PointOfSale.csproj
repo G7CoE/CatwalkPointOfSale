@@ -117,8 +117,10 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\DataSources\PointOfSale.DbClass.BaseTable.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.DbClass.Buy.datasource" />
     <None Include="Properties\DataSources\PointOfSale.DbClass.BuyBill.datasource" />
     <None Include="Properties\DataSources\PointOfSale.DbClass.BuyBillView.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.DbClass.BuyView.datasource" />
     <None Include="Properties\DataSources\PointOfSale.DbClass.Emp.datasource" />
     <None Include="Properties\DataSources\PointOfSale.DbClass.Supplier.datasource" />
     <None Include="Properties\Settings.settings">
