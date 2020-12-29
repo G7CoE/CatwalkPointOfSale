@@ -1,0 +1,136 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="Current">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F6B2106F-1D92-4D6C-B13B-A7ED627F9510}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MyControls</RootNamespace>
+    <AssemblyName>MyControls</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ComboBoxItem.cs" />
+    <Compile Include="ComboCollection.cs" />
+    <Compile Include="NCurrencyBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NCurrencyBox.Designer.cs">
+      <DependentUpon>NCurrencyBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CurrencyBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CurrencyBox.Designer.cs">
+      <DependentUpon>CurrencyBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NDateBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NDateBox.Designer.cs">
+      <DependentUpon>NDateBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DateBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DateBox.Designer.cs">
+      <DependentUpon>DateBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DateTimeBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DateTimeBox.Designer.cs">
+      <DependentUpon>DateTimeBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GroupByGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GroupByGrid.Designer.cs">
+      <DependentUpon>GroupByGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImagedComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="IntBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="IntBox.Designer.cs">
+      <DependentUpon>IntBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyCombo.Designer.cs">
+      <DependentUpon>MyCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyGridView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyGridView.Designer.cs">
+      <DependentUpon>MyGridView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyPanel.Designer.cs">
+      <DependentUpon>MyPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StrBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StrBox.Designer.cs">
+      <DependentUpon>StrBox.cs</DependentUpon>
+    </Compile>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="NCurrencyBox.resx">
+      <DependentUpon>NCurrencyBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CurrencyBox.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CurrencyBox.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
