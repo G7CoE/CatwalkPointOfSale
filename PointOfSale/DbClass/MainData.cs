@@ -16,6 +16,25 @@ namespace PointOfSale.DbClass
         public string name { get; set; }
 	}
 
+	public class Brand
+    {
+		public int id { get; set; }
+		public string name { get; set; }
+		public string fullName { get; set; }
+		public int? brandProductTypeID { get; set; }
+		public int? defaultSizeSetID { get; set; }
+	}
+
+	public class BrandView : Brand
+    {
+		public string brandProductTypeName { get; set; }
+		public string sizeSetName { get; set; }
+		public int isRequiredColor { get; set; }
+		public int isRequireSize { get; set; }
+		public List<BaseTable> modelCodes { get; set; }
+
+	}
+
 	public class BuyBill
     {
 		public int id { get; set; }

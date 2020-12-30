@@ -26,6 +26,7 @@ namespace PointOfSale
 
     static class MyGlobals
     {
+        public static DataSet ds = new DataSet();
         public static DataTable dtCurrentEmp = new DataTable(); // id, name เท่านั้น
         public static DataTable dtLogInEmp = new DataTable();
     }

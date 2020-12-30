@@ -74,6 +74,12 @@ namespace PointOfSale
             return dt;
         }
 
+        public static void fillDataSet (string tableName, SqlDataReader reader)
+        {
+            MyGlobals.ds.Tables.Add(tableName);
+            MyGlobals.ds.Tables[tableName].Load(reader);
+        }
+
 
         #region TypeParse
         public static decimal DecimalParse(string val)

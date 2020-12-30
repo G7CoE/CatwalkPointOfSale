@@ -13,7 +13,7 @@ namespace PointOfSale
 {
     public partial class MdiFormMain : Form
     {
-
+        DataSet ds = MyGlobals.ds;
         public MdiFormMain()
         {
             InitializeComponent();
@@ -66,8 +66,8 @@ namespace PointOfSale
             // โหลดข้อมูลหลักที่ต้องใช้ใน form หลายฟอร์ม
             MyGlobals.dtCurrentEmp = Helper.LoadSql("SELECT * FROM Emp WHERE isQuitted <> 1");
             // ตอนทำเสร็จบรรทัดนี้ เอาออก ได้มาตั้งแต่ LogIn แล้ว
-            MyGlobals.dtLogInEmp = Helper.LoadSql("SELECT * FROM Emp WHERE logInBranchID = 1 AND isQuitted <> 1"); 
-            
+            MyGlobals.dtLogInEmp = Helper.LoadSql("SELECT * FROM Emp WHERE logInBranchID = 1 AND isQuitted <> 1");
+
 
             // show form buy
             FormBuy formBuy1 = new FormBuy();

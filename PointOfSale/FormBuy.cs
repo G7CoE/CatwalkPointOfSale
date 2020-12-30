@@ -8,12 +8,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MyControls;
 using PointOfSale.DbClass;
 
 namespace PointOfSale
 {
     public partial class FormBuy : Form
     {
+        DataSet ds = MyGlobals.ds;
         DataTable dtSuppleir, dtBranch;
         DataTable dtBuyBill;
         DataTable dtBuy;
@@ -27,9 +29,27 @@ namespace PointOfSale
         BindingSource bsModelInfoEmp = new BindingSource();
         BindingSource bsKeyInEmp = new BindingSource();
 
+
         BuyBillView buyBillview1 = new BuyBillView();
         string strBuyBillCriteria = "WHERE BuyBill.id > 4700 ORDER BY BuyBill.id"; // เปลี่ยนเป็น โหลด 4 เดือนย้อนหลัง
+
+        BindingSource[] BsColors = new BindingSource[4];
+        MyCombo[] colorMyCombos;
+        BindingSource[] BsSizeSets = new BindingSource[4];
+        MyCombo[] SizeSetMyCombos;
+        IntegerBox[] setsIntegerBoxes;
+        IntegerBox[] unitsIntegerBoxes;
+        CurrencyBox[] CostCurrencyBoxes;
+        CurrencyBox[] amountCurrentcyBoxes;
+        StrBox[] remarkStrBoxes;
+
+        BindingSource[,] BsSizes = new BindingSource[4, 6];
+        MyCombo[,] sizeMyCombos;
+        IntegerBox[,] unitSizeIntBoxes;
+        DataRelation brandsmodelsRelation;
+
         EditState billState = EditState.Viewing;
+        EditState itemState = EditState.Viewing;
         DataRowView drvNew;
         private void SetFormState(EditState setState)
         {
@@ -74,7 +94,6 @@ namespace PointOfSale
             dcbBillAmount.Value = 0; // ไม่มีผลอะไร ไม่ได้ bind ไว้
             dcbBilltotal.Value = 0; // ไม่มีผลอะไร ไม่ได้ bind ไว้
             cmbSupplier.Focus();
-            
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
@@ -243,6 +262,21 @@ namespace PointOfSale
         public FormBuy()
         {
             InitializeComponent();
+            colorMyCombos = new MyCombo[] { ColorMyCombo0, ColorMyCombo1, ColorMyCombo2, ColorMyCombo3 };
+            SizeSetMyCombos = new MyCombo[] { SizeSetMyCombo0, SizeSetMyCombo1, SizeSetMyCombo2, SizeSetMyCombo3 };
+            setsIntegerBoxes = new IntegerBox[] { setsIntegerBox0, setsIntegerBox1, setsIntegerBox2, setsIntegerBox3 };
+            unitsIntegerBoxes = new IntegerBox[] { unitsIntegerBox0, unitsIntegerBox1, unitsIntegerBox2, unitsIntegerBox3 };
+            CostCurrencyBoxes = new CurrencyBox[] { CostCurrencyBox0, CostCurrencyBox1, CostCurrencyBox2, CostCurrencyBox3 };
+            amountCurrentcyBoxes = new CurrencyBox[] { amountcurrencyBox0, amountcurrencyBox1, amountcurrencyBox2, amountcurrencyBox3 };
+            remarkStrBoxes = new StrBox[] { remarkStrBox0, remarkStrBox1, remarkStrBox2, remarkStrBox3 };
+            sizeMyCombos = new MyCombo[,] { { sizeMyCombo00, sizeMyCombo01, sizeMyCombo02, sizeMyCombo03, sizeMyCombo04, sizeMyCombo05 },
+                                             { sizeMyCombo10, sizeMyCombo11, sizeMyCombo12, sizeMyCombo13, sizeMyCombo14, sizeMyCombo15 },
+                                             { sizeMyCombo20, sizeMyCombo21, sizeMyCombo22, sizeMyCombo23, sizeMyCombo24, sizeMyCombo25 },
+                                             { sizeMyCombo30, sizeMyCombo31, sizeMyCombo32, sizeMyCombo33, sizeMyCombo34, sizeMyCombo35 } };
+            unitSizeIntBoxes = new IntegerBox[,] { { unitSizeIntBox00, unitSizeIntBox01, unitSizeIntBox02, unitSizeIntBox03, unitSizeIntBox04, unitSizeIntBox05 },
+                                                   { unitSizeIntBox10, unitSizeIntBox11, unitSizeIntBox12, unitSizeIntBox13, unitSizeIntBox14, unitSizeIntBox15 },
+                                                   { unitSizeIntBox20, unitSizeIntBox21, unitSizeIntBox22, unitSizeIntBox23, unitSizeIntBox24, unitSizeIntBox25 },
+                                                   { unitSizeIntBox30, unitSizeIntBox31, unitSizeIntBox32, unitSizeIntBox33, unitSizeIntBox34, unitSizeIntBox35 } };
         }
         private DataTable SelectBill(string criteria)
         {
@@ -260,6 +294,96 @@ namespace PointOfSale
                 "dbo.Emp AS KeyInEmp ON dbo.BuyBill.keyInEmpID = KeyInEmp.id " + criteria ));
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void setItemState (EditState temp)
+        {
+            bool isAllowEdit = (temp != EditState.Viewing);
+            modelPanel.Visible = isAllowEdit;
+            footItemPanel.Visible = isAllowEdit;
+
+            btnAdd.Visible = !isAllowEdit;
+            btnEdit.Visible = !isAllowEdit;
+            btnDelete.Visible = !isAllowEdit;
+            btnAddNewItem.Visible = !isAllowEdit;
+            btnEditItem.Visible = !isAllowEdit;
+            btnDeleteItem.Visible = !isAllowEdit;
+            itemState = temp;
+        }
+
+        private void btnAddNewItem_Click(object sender, EventArgs e)
+        {
+            // ต้องใช้ Brand กับ model ของ supplier นี้
+            // สร้่าง list จาก Dataset
+            List<BrandView> brandViews = new List<BrandView>();
+            DataTable dtBrandsSupplierID = Helper.LoadSql("SELECT dbo.Brand.id FROM dbo.Supplier_Brand INNER JOIN " +
+                "dbo.Brand ON dbo.Supplier_Brand.brandID = dbo.Brand.id " +
+                "WHERE(dbo.Supplier_Brand.supplierID = 1)"); // SupplierID
+            foreach (DataRow brandRow in dtBrandsSupplierID.Rows)
+            {
+                
+                int brandID = int.Parse(brandRow["id"].ToString());
+                DataRow dr1 = (DataRow) (from myRow in ds.Tables["Brand"].AsEnumerable()
+                               where myRow.Field<int>("id") == brandID
+                               select myRow).FirstOrDefault();
+                BrandView brandView1 = new BrandView();
+                brandView1.id = int.Parse( dr1["id"].ToString());
+                brandView1.name = dr1["name"].ToString();
+                brandView1.fullName = dr1["fullName"].ToString();
+                brandView1.brandProductTypeID = int.Parse(dr1["brandProductTypeID"].ToString());
+                brandView1.brandProductTypeName = dr1["brandProductTypeName"].ToString();
+                brandView1.defaultSizeSetID = Helper.IntParse(dr1["defaultSizeSetID"].ToString());
+                brandView1.sizeSetName = dr1["sizeSetName"].ToString();
+                brandView1.isRequiredColor = int.Parse(dr1["isRequiredColor"].ToString());
+                brandView1.isRequireSize = int.Parse(dr1["isRequireSize"].ToString());
+                brandView1.modelCodes = new List<BaseTable>();
+                foreach (DataRow dr2 in dr1.GetChildRows(brandsmodelsRelation))
+                {
+                    BaseTable model1 = new BaseTable();
+                    model1.id = (int)dr2["id"];
+                    model1.name = dr2["code"].ToString();
+                    brandView1.modelCodes.Add(model1);
+                }
+                brandViews.Add(brandView1);
+            }
+            bsBrandView.DataSource = brandViews;
+            setItemState(EditState.Adding);
+            
+        }
+
+        private void btnEditItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDeleteItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnOKItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCancelItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbBrand_SelectedValueChanged(object sender, EventArgs e)
+        {
+            
+            
+        }
+
+        private void cmbBrand_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
 
         private void FormBuy_Load(object sender, EventArgs e)
         {
@@ -284,6 +408,22 @@ namespace PointOfSale
             bsKeyInEmp.DataSource = dtLogInEmp;
             cmbKeyInEmp.DataSource = bsKeyInEmp;
             // ** หมายเหตุ DisplayMember = "name" ValueMember = "id" เซ็ตไว้ใน property ขี้เกียจพิมพ์
+
+            // โหลดข้อมูลที่ต้องการ เพื่อจัดการข้อมูลรายการ
+            // color, sizeset + item
+            // โหลด Brand ทั้งหมด พร้อมกับ brandModelType
+            string command = "SELECT        TOP (100) PERCENT dbo.Brand.id, dbo.Brand.name, dbo.Brand.fullName, dbo.Brand.brandProductTypeID, dbo.BrandProductType.name AS brandProductTypeName, " +
+                "dbo.Brand.defaultSizeSetID, dbo.SizeSet.name AS sizeSetName, dbo.BrandProductType.isRequiredColor, dbo.BrandProductType.isRequireSize " +
+                "FROM dbo.Brand INNER JOIN " +
+                "dbo.BrandProductType ON dbo.Brand.brandProductTypeID = dbo.BrandProductType.id LEFT OUTER JOIN " +
+                "dbo.SizeSet ON dbo.Brand.id = dbo.SizeSet.id ORDER BY dbo.Brand.id";
+            Helper.fillDataSet("Brand", Helper.ExecuteReader(command, CommandType.Text)); // Load Brand ไว้ใน Dataset
+
+            Helper.fillDataSet("Model", Helper.ExecuteReader("SELECT * FROM Model ORDER BY brandID, code", CommandType.Text));
+
+            brandsmodelsRelation = new DataRelation("BrandsModels", ds.Tables["Brand"].Columns["id"], ds.Tables["Model"].Columns["brandID"]);
+            ds.Relations.Add(brandsmodelsRelation);
+            
             // โหลด BuyBill
             dtBuyBill = SelectBill(strBuyBillCriteria);
             bsBuyBill.DataSource = dtBuyBill;
