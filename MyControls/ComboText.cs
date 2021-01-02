@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace MyControls
 {
-    public partial class MyCombo : ComboBox
+    public partial class ComboText : ComboBox
     {
-        public MyCombo()
+        public bool isAlwaysDropperDown { get; set; }
+        public ComboText()
         {
             InitializeComponent();
+            base.DropDownStyle = ComboBoxStyle.DropDown;
+        }
+
+        protected override void OnPaint(PaintEventArgs pe)
+        {
+            base.OnPaint(pe);
         }
 
         #region SelectAllText
@@ -29,12 +36,14 @@ namespace MyControls
                 SelectAll();
                 _focused = true;
             }
+            DroppedDown = true;
         }
 
         protected override void OnLeave(EventArgs e)
         {
             base.OnLeave(e);
             _focused = false;
+            DroppedDown = false;
         }
 
         protected override void OnMouseUp(MouseEventArgs mevent)
@@ -101,6 +110,5 @@ namespace MyControls
             UpdateCue();
         }
         #endregion
-
     }
 }

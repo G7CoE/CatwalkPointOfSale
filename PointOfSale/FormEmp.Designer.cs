@@ -57,12 +57,12 @@ namespace PointOfSale
             this.leftMyPanel = new MyControls.MyPanel();
             this.fillmyPanel = new MyControls.MyPanel();
             this.topMyPanel = new MyControls.MyPanel();
-            this.selectEmpsMyCombo = new MyControls.MyCombo();
+            this.selectEmpsMyCombo = new MyControls.ComboList();
             this.empDataGroupBox = new System.Windows.Forms.GroupBox();
             this.ndateQuitDate = new MyControls.NDateBox();
             this.ndecBundle = new MyControls.NCurrencyBox();
             this.chkisQuitted = new System.Windows.Forms.CheckBox();
-            this.empTypeIDMyCombo = new MyControls.MyCombo();
+            this.empTypeIDMyCombo = new MyControls.ComboList();
             idLabel = new System.Windows.Forms.Label();
             nameLabel = new System.Windows.Forms.Label();
             fullNameLabel = new System.Windows.Forms.Label();
@@ -523,10 +523,10 @@ namespace PointOfSale
         private System.Windows.Forms.ListBox empListBox;
         private MyControls.MyPanel leftMyPanel;
         private MyControls.MyPanel topMyPanel;
-        private MyControls.MyCombo selectEmpsMyCombo;
+        private MyControls.ComboList selectEmpsMyCombo;
         private System.Windows.Forms.GroupBox empDataGroupBox;
         private MyControls.MyPanel fillmyPanel;
-        private MyControls.MyCombo empTypeIDMyCombo;
+        private MyControls.ComboList empTypeIDMyCombo;
         private System.Windows.Forms.CheckBox chkisQuitted;
         private MyControls.NCurrencyBox ndecBundle;
         private MyControls.NDateBox ndateQuitDate;

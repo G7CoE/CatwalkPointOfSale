@@ -10,44 +10,18 @@ using System.Windows.Forms;
 
 namespace MyControls
 {
-    public partial class MyCombo : ComboBox
+    public partial class ComboList : ComboBox
     {
-        public MyCombo()
+        public ComboList()
         {
             InitializeComponent();
+            base.DropDownStyle = ComboBoxStyle.DropDownList;
         }
 
-        #region SelectAllText
-
-        private bool _focused;
-
-        protected override void OnEnter(EventArgs e)
+        protected override void OnPaint(PaintEventArgs pe)
         {
-            base.OnEnter(e);
-            if (MouseButtons == MouseButtons.None)
-            {
-                SelectAll();
-                _focused = true;
-            }
+            base.OnPaint(pe);
         }
-
-        protected override void OnLeave(EventArgs e)
-        {
-            base.OnLeave(e);
-            _focused = false;
-        }
-
-        protected override void OnMouseUp(MouseEventArgs mevent)
-        {
-            base.OnMouseUp(mevent);
-            if (!_focused)
-            {
-                if (SelectionLength == 0)
-                    SelectAll();
-                _focused = true;
-            }
-        }
-        #endregion
 
         #region EnterKeyHandler
         protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
@@ -101,6 +75,5 @@ namespace MyControls
             UpdateCue();
         }
         #endregion
-
     }
 }

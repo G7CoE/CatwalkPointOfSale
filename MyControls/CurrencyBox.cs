@@ -15,7 +15,7 @@ namespace MyControls
     /// Extended Textbox Control used to display Currency
     /// </summary>
     [System.ComponentModel.DefaultBindingProperty("Value")]
-    public partial class CurrencyBox : StrBox
+    public partial class  CurrencyBox : StrBox
     {
         // member variable used to keep dollar value
         private Decimal _value = 0;

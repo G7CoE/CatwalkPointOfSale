@@ -54,51 +54,6 @@ namespace PointOfSale.DbClass
 		public DateTime keyInDateTime { get; set; }
 		public DateTime updated { get; set; }
 		public string updateBy { get; set; }
-		/*
-		public int Insert(BuyBill buybill1)
-		{
-			string command = "INSERT BuyBill (branchID, supplierID, billDate, transportExpenseID, checkEmpID, barcodeEmpID, barcodeEmpID2, modelInfoEmpID, remark, discount, payID, deviceID, keyInEmpID, keyInDateTime, updated, updateBy)" +
-				"OUTPUT Inserted.id VALUES (@branchID, @supplierID, @billDate, @transportExpenseID, @checkEmpID, @barcodeEmpID, @barcodeEmpID2, @modelInfoEmpID, @remark, @discount, @payID, @deviceID, @keyInEmpID, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, @updateBy)";
-			return (int)Helper.ExecuteScalar(command, System.Data.CommandType.Text,
-				new SqlParameter("@branchID", (object)buybill1.branchID ?? DBNull.Value),
-				new SqlParameter("@supplierID", (object)buybill1.supplierID ?? DBNull.Value),
-				new SqlParameter("@billDate", (object)buybill1.billDate ?? DBNull.Value),
-				new SqlParameter("@transportExpenseID", (object)buybill1.transportExpenseID ?? DBNull.Value),
-				new SqlParameter("@checkEmpID", (object)buybill1.checkEmpID ?? DBNull.Value),
-				new SqlParameter("@barcodeEmpID", (object)buybill1.barcodeEmpID ?? DBNull.Value),
-				new SqlParameter("@barcodeEmpID2", (object)buybill1.barcodeEmpID2 ?? DBNull.Value),
-				new SqlParameter("@modelInfoEmpID", (object)buybill1.modelInfoEmpID ?? DBNull.Value),
-				new SqlParameter("@remark", (object)buybill1.remark ?? DBNull.Value),
-				new SqlParameter("@discount", (object)buybill1.discount ?? DBNull.Value),
-				new SqlParameter("@payID", (object)buybill1.payID ?? DBNull.Value),
-				new SqlParameter("@deviceID", (object)buybill1.deviceID ?? DBNull.Value),
-				new SqlParameter("@keyInEmpID", (object)buybill1.keyInEmpID ?? DBNull.Value),
-				new SqlParameter("@keyInDateTime", (object)buybill1.keyInDateTime ?? DBNull.Value),
-				new SqlParameter("@updateBy", (object)buybill1.updateBy ?? DBNull.Value));
-		}
-
-		public int Update(BuyBill buybill1)
-		{
-			string command = "UPDATE BuyBill SET branchID=@branchID, supplierID=@supplierID, billDate=@billDate, transportExpenseID=@transportExpenseID, checkEmpID=@checkEmpID, barcodeEmpID=@barcodeEmpID, barcodeEmpID2=@barcodeEmpID2, modelInfoEmpID=@modelInfoEmpID, remark=@remark, discount=@discount, payID=@payID, deviceID=@deviceID, keyInEmpID=@keyInEmpID, keyInDateTime=@keyInDateTime, updated=CURRENT_TIMESTAMP, updateBy=@updateBy WHERE id = @id";
-			return Helper.ExecuteNonQuery(command, System.Data.CommandType.Text,
-				new SqlParameter("@branchID", (object)buybill1.branchID ?? DBNull.Value),
-				new SqlParameter("@supplierID", (object)buybill1.supplierID ?? DBNull.Value),
-				new SqlParameter("@billDate", (object)buybill1.billDate ?? DBNull.Value),
-				new SqlParameter("@transportExpenseID", (object)buybill1.transportExpenseID ?? DBNull.Value),
-				new SqlParameter("@checkEmpID", (object)buybill1.checkEmpID ?? DBNull.Value),
-				new SqlParameter("@barcodeEmpID", (object)buybill1.barcodeEmpID ?? DBNull.Value),
-				new SqlParameter("@barcodeEmpID2", (object)buybill1.barcodeEmpID2 ?? DBNull.Value),
-				new SqlParameter("@modelInfoEmpID", (object)buybill1.modelInfoEmpID ?? DBNull.Value),
-				new SqlParameter("@remark", (object)buybill1.remark ?? DBNull.Value),
-				new SqlParameter("@discount", (object)buybill1.discount ?? DBNull.Value),
-				new SqlParameter("@payID", (object)buybill1.payID ?? DBNull.Value),
-				new SqlParameter("@deviceID", (object)buybill1.deviceID ?? DBNull.Value),
-				new SqlParameter("@keyInEmpID", (object)buybill1.keyInEmpID ?? DBNull.Value),
-				new SqlParameter("@keyInDateTime", (object)buybill1.keyInDateTime ?? DBNull.Value),
-				new SqlParameter("@updateBy", (object)buybill1.updateBy ?? DBNull.Value),
-				new SqlParameter("@id", (object)buybill1.id ?? DBNull.Value));
-		}
-		*/
 	}
 
 	public class BuyBillView : BuyBill
@@ -210,6 +165,18 @@ namespace PointOfSale.DbClass
 	}
     #endregion
 
+	public class SizeSetView: BaseTable
+    {
+		public List<SizeSetItemGroupSize> sizeUnits;
+    }
+
+	public class SizeSetItemGroupSize
+    {
+		public int sizeSetID;
+		public int sizeID;
+		public string sizeName;
+		public int units;
+    }
 	public class Supplier : BaseTable
     {
 		public string abbrev;

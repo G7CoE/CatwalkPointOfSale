@@ -43,6 +43,18 @@
   <ItemGroup>
     <Compile Include="ComboBoxItem.cs" />
     <Compile Include="ComboCollection.cs" />
+    <Compile Include="ComboList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ComboList.Designer.cs">
+      <DependentUpon>ComboList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ComboText.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ComboText.Designer.cs">
+      <DependentUpon>ComboText.cs</DependentUpon>
+    </Compile>
     <Compile Include="NCurrencyBox.cs">
       <SubType>Component</SubType>
     </Compile>

@@ -92,119 +92,119 @@ namespace PointOfSale
             this.btnBillCancel = new System.Windows.Forms.Button();
             this.btnBillOK = new System.Windows.Forms.Button();
             this.modelPanel = new MyControls.MyPanel();
-            this.unitsModelIntegerBox0 = new MyControls.IntegerBox();
-            this.SizeSetModelMyCombo = new MyControls.MyCombo();
-            this.setsModelIntegerBox = new MyControls.IntegerBox();
-            this.cmbBrand = new MyControls.MyCombo();
+            this.inbModelUnits = new MyControls.IntegerBox();
+            this.cmbModelSizeSet = new MyControls.ComboList();
+            this.inbModelSets = new MyControls.IntegerBox();
+            this.cmbBrand = new MyControls.ComboList();
             this.bsBrandView = new System.Windows.Forms.BindingSource(this.components);
-            this.costModelCurrencyBox = new MyControls.CurrencyBox();
-            this.currencyBox1 = new MyControls.CurrencyBox();
-            this.cmbModel = new MyControls.MyCombo();
+            this.dcbModelCost = new MyControls.CurrencyBox();
+            this.dcbModelPrice = new MyControls.CurrencyBox();
+            this.cmbModel = new MyControls.ComboText();
             this.bsModel = new System.Windows.Forms.BindingSource(this.components);
-            this.productPanel0 = new MyControls.MyPanel();
-            this.remarkStrBox0 = new MyControls.StrBox();
-            this.ColorMyCombo0 = new MyControls.MyCombo();
-            this.SizeSetMyCombo0 = new MyControls.MyCombo();
-            this.CostCurrencyBox0 = new MyControls.CurrencyBox();
-            this.setsIntegerBox0 = new MyControls.IntegerBox();
-            this.unitsIntegerBox0 = new MyControls.IntegerBox();
-            this.amountcurrencyBox0 = new MyControls.CurrencyBox();
-            this.sizePanel0 = new MyControls.MyPanel();
-            this.sizeMyCombo05 = new MyControls.MyCombo();
-            this.sizeMyCombo00 = new MyControls.MyCombo();
-            this.unitSizeIntBox05 = new MyControls.IntegerBox();
-            this.unitSizeIntBox02 = new MyControls.IntegerBox();
-            this.unitSizeIntBox04 = new MyControls.IntegerBox();
-            this.unitSizeIntBox03 = new MyControls.IntegerBox();
-            this.unitSizeIntBox00 = new MyControls.IntegerBox();
-            this.sizeMyCombo04 = new MyControls.MyCombo();
-            this.unitSizeIntBox01 = new MyControls.IntegerBox();
-            this.sizeMyCombo01 = new MyControls.MyCombo();
-            this.sizeMyCombo03 = new MyControls.MyCombo();
-            this.sizeMyCombo02 = new MyControls.MyCombo();
-            this.productPanel1 = new MyControls.MyPanel();
-            this.remarkStrBox1 = new MyControls.StrBox();
-            this.SizeSetMyCombo1 = new MyControls.MyCombo();
-            this.CostCurrencyBox1 = new MyControls.CurrencyBox();
-            this.setsIntegerBox1 = new MyControls.IntegerBox();
-            this.ColorMyCombo1 = new MyControls.MyCombo();
-            this.amountcurrencyBox1 = new MyControls.CurrencyBox();
-            this.unitsIntegerBox1 = new MyControls.IntegerBox();
-            this.sizePanel1 = new MyControls.MyPanel();
-            this.sizeMyCombo15 = new MyControls.MyCombo();
-            this.sizeMyCombo10 = new MyControls.MyCombo();
-            this.sizeMyCombo11 = new MyControls.MyCombo();
-            this.unitSizeIntBox11 = new MyControls.IntegerBox();
-            this.sizeMyCombo13 = new MyControls.MyCombo();
-            this.unitSizeIntBox15 = new MyControls.IntegerBox();
-            this.sizeMyCombo14 = new MyControls.MyCombo();
-            this.unitSizeIntBox12 = new MyControls.IntegerBox();
-            this.unitSizeIntBox14 = new MyControls.IntegerBox();
-            this.unitSizeIntBox13 = new MyControls.IntegerBox();
-            this.unitSizeIntBox10 = new MyControls.IntegerBox();
-            this.sizeMyCombo12 = new MyControls.MyCombo();
-            this.productPanel2 = new MyControls.MyPanel();
-            this.remarkStrBox2 = new MyControls.StrBox();
-            this.unitsIntegerBox2 = new MyControls.IntegerBox();
-            this.CostCurrencyBox2 = new MyControls.CurrencyBox();
-            this.amountcurrencyBox2 = new MyControls.CurrencyBox();
-            this.SizeSetMyCombo2 = new MyControls.MyCombo();
-            this.ColorMyCombo2 = new MyControls.MyCombo();
-            this.setsIntegerBox2 = new MyControls.IntegerBox();
-            this.sizePanel2 = new MyControls.MyPanel();
-            this.sizeMyCombo25 = new MyControls.MyCombo();
-            this.sizeMyCombo20 = new MyControls.MyCombo();
-            this.unitSizeIntBox25 = new MyControls.IntegerBox();
-            this.unitSizeIntBox21 = new MyControls.IntegerBox();
-            this.unitSizeIntBox24 = new MyControls.IntegerBox();
-            this.unitSizeIntBox22 = new MyControls.IntegerBox();
-            this.unitSizeIntBox20 = new MyControls.IntegerBox();
-            this.unitSizeIntBox23 = new MyControls.IntegerBox();
-            this.sizeMyCombo22 = new MyControls.MyCombo();
-            this.sizeMyCombo24 = new MyControls.MyCombo();
-            this.sizeMyCombo21 = new MyControls.MyCombo();
-            this.sizeMyCombo23 = new MyControls.MyCombo();
-            this.productPanel3 = new MyControls.MyPanel();
-            this.remarkStrBox3 = new MyControls.StrBox();
-            this.CostCurrencyBox3 = new MyControls.CurrencyBox();
-            this.SizeSetMyCombo3 = new MyControls.MyCombo();
-            this.ColorMyCombo3 = new MyControls.MyCombo();
-            this.setsIntegerBox3 = new MyControls.IntegerBox();
-            this.unitsIntegerBox3 = new MyControls.IntegerBox();
-            this.amountcurrencyBox3 = new MyControls.CurrencyBox();
-            this.sizePanel3 = new MyControls.MyPanel();
-            this.unitSizeIntBox35 = new MyControls.IntegerBox();
-            this.sizeMyCombo35 = new MyControls.MyCombo();
-            this.unitSizeIntBox31 = new MyControls.IntegerBox();
-            this.unitSizeIntBox34 = new MyControls.IntegerBox();
-            this.sizeMyCombo30 = new MyControls.MyCombo();
-            this.unitSizeIntBox30 = new MyControls.IntegerBox();
-            this.unitSizeIntBox32 = new MyControls.IntegerBox();
-            this.sizeMyCombo32 = new MyControls.MyCombo();
-            this.unitSizeIntBox33 = new MyControls.IntegerBox();
-            this.sizeMyCombo34 = new MyControls.MyCombo();
-            this.sizeMyCombo33 = new MyControls.MyCombo();
-            this.sizeMyCombo31 = new MyControls.MyCombo();
-            this.footItemPanel = new MyControls.MyPanel();
+            this.panProduct0 = new MyControls.MyPanel();
+            this.txtRemark0 = new MyControls.StrBox();
+            this.cmbColor0 = new MyControls.ComboList();
+            this.cmbSizeSet0 = new MyControls.ComboList();
+            this.dcbCost0 = new MyControls.CurrencyBox();
+            this.inbSets0 = new MyControls.IntegerBox();
+            this.inbUnits0 = new MyControls.IntegerBox();
+            this.dcbAmount0 = new MyControls.CurrencyBox();
+            this.panSize0 = new MyControls.MyPanel();
+            this.cmbSize05 = new MyControls.ComboList();
+            this.cmbSize00 = new MyControls.ComboList();
+            this.inbUnitSize05 = new MyControls.IntegerBox();
+            this.inbUnitSize02 = new MyControls.IntegerBox();
+            this.inbUnitSize04 = new MyControls.IntegerBox();
+            this.inbUnitSize03 = new MyControls.IntegerBox();
+            this.inbUnitSize00 = new MyControls.IntegerBox();
+            this.cmbSize04 = new MyControls.ComboList();
+            this.inbUnitSize01 = new MyControls.IntegerBox();
+            this.cmbSize01 = new MyControls.ComboList();
+            this.cmbSize03 = new MyControls.ComboList();
+            this.cmbSize02 = new MyControls.ComboList();
+            this.panProduct1 = new MyControls.MyPanel();
+            this.txtRemark1 = new MyControls.StrBox();
+            this.cmbSizeSet1 = new MyControls.ComboList();
+            this.dcbCost1 = new MyControls.CurrencyBox();
+            this.inbSets1 = new MyControls.IntegerBox();
+            this.cmbColor1 = new MyControls.ComboList();
+            this.dcbAmount1 = new MyControls.CurrencyBox();
+            this.inbUnits1 = new MyControls.IntegerBox();
+            this.panSize1 = new MyControls.MyPanel();
+            this.cmbSize15 = new MyControls.ComboList();
+            this.cmbSize10 = new MyControls.ComboList();
+            this.cmbSize11 = new MyControls.ComboList();
+            this.inbUnitSize11 = new MyControls.IntegerBox();
+            this.cmbSize13 = new MyControls.ComboList();
+            this.inbUnitSize15 = new MyControls.IntegerBox();
+            this.cmbSize14 = new MyControls.ComboList();
+            this.inbUnitSize12 = new MyControls.IntegerBox();
+            this.inbUnitSize14 = new MyControls.IntegerBox();
+            this.inbUnitSize13 = new MyControls.IntegerBox();
+            this.inbUnitSize10 = new MyControls.IntegerBox();
+            this.cmbSize12 = new MyControls.ComboList();
+            this.panProduct2 = new MyControls.MyPanel();
+            this.txtRemark2 = new MyControls.StrBox();
+            this.inbUnits2 = new MyControls.IntegerBox();
+            this.dcbCost2 = new MyControls.CurrencyBox();
+            this.dcbAmount2 = new MyControls.CurrencyBox();
+            this.cmbSizeSet2 = new MyControls.ComboList();
+            this.cmbColor2 = new MyControls.ComboList();
+            this.inbSets2 = new MyControls.IntegerBox();
+            this.panSize2 = new MyControls.MyPanel();
+            this.cmbSize25 = new MyControls.ComboList();
+            this.cmbSize20 = new MyControls.ComboList();
+            this.inbUnitSize25 = new MyControls.IntegerBox();
+            this.inbUnitSize21 = new MyControls.IntegerBox();
+            this.inbUnitSize24 = new MyControls.IntegerBox();
+            this.inbUnitSize22 = new MyControls.IntegerBox();
+            this.inbUnitSize20 = new MyControls.IntegerBox();
+            this.inbUnitSize23 = new MyControls.IntegerBox();
+            this.cmbSize22 = new MyControls.ComboList();
+            this.cmbSize24 = new MyControls.ComboList();
+            this.cmbSize21 = new MyControls.ComboList();
+            this.cmbSize23 = new MyControls.ComboList();
+            this.panProduct3 = new MyControls.MyPanel();
+            this.txtRemark3 = new MyControls.StrBox();
+            this.dcbCost3 = new MyControls.CurrencyBox();
+            this.cmbSizeSet3 = new MyControls.ComboList();
+            this.cmbColor3 = new MyControls.ComboList();
+            this.inbSets3 = new MyControls.IntegerBox();
+            this.inbUnits3 = new MyControls.IntegerBox();
+            this.dcbAmount3 = new MyControls.CurrencyBox();
+            this.panSize3 = new MyControls.MyPanel();
+            this.inbUnitSize35 = new MyControls.IntegerBox();
+            this.cmbSize35 = new MyControls.ComboList();
+            this.inbUnitSize31 = new MyControls.IntegerBox();
+            this.inbUnitSize34 = new MyControls.IntegerBox();
+            this.cmbSize30 = new MyControls.ComboList();
+            this.inbUnitSize30 = new MyControls.IntegerBox();
+            this.inbUnitSize32 = new MyControls.IntegerBox();
+            this.cmbSize32 = new MyControls.ComboList();
+            this.inbUnitSize33 = new MyControls.IntegerBox();
+            this.cmbSize34 = new MyControls.ComboList();
+            this.cmbSize33 = new MyControls.ComboList();
+            this.cmbSize31 = new MyControls.ComboList();
+            this.panFootItem = new MyControls.MyPanel();
             this.currencyBox3 = new MyControls.CurrencyBox();
             this.btnOKItem = new System.Windows.Forms.Button();
             this.btnCancelItem = new System.Windows.Forms.Button();
             this.BottomPanel = new MyControls.MyPanel();
             this.btnEditItem = new System.Windows.Forms.Button();
             this.dcbBilltotal = new MyControls.CurrencyBox();
-            this.cmbCheckEmpEdit = new MyControls.MyCombo();
+            this.cmbCheckEmpEdit = new MyControls.ComboList();
             this.bsBuyBill = new System.Windows.Forms.BindingSource(this.components);
             this.btnDeleteItem = new System.Windows.Forms.Button();
             this.dcbBillAmount = new MyControls.CurrencyBox();
             this.dcbDiscount = new MyControls.CurrencyBox();
             this.btnAddNewItem = new System.Windows.Forms.Button();
-            this.cmbCheckEmpView = new MyControls.MyCombo();
-            this.cmbModelInfoEmpEdit = new MyControls.MyCombo();
-            this.cmbModelInfoEmpView = new MyControls.MyCombo();
-            this.cmbBarcodeEmp2Edit = new MyControls.MyCombo();
-            this.cmbBarcodeEmp2View = new MyControls.MyCombo();
-            this.cmbBarcodeEmpEdit = new MyControls.MyCombo();
-            this.cmbBarcodeEmpView = new MyControls.MyCombo();
+            this.cmbCheckEmpView = new MyControls.ComboList();
+            this.cmbModelInfoEmpEdit = new MyControls.ComboList();
+            this.cmbModelInfoEmpView = new MyControls.ComboList();
+            this.cmbBarcodeEmp2Edit = new MyControls.ComboList();
+            this.cmbBarcodeEmp2View = new MyControls.ComboList();
+            this.cmbBarcodeEmpEdit = new MyControls.ComboList();
+            this.cmbBarcodeEmpView = new MyControls.ComboList();
             this.headPanel = new MyControls.MyPanel();
             this.buyBillnav = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
@@ -217,7 +217,7 @@ namespace PointOfSale
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.billInfoPanel = new MyControls.MyPanel();
-            this.cmbKeyInEmp = new MyControls.MyCombo();
+            this.cmbKeyInEmp = new MyControls.ComboList();
             this.txtKeyInDateTime = new MyControls.StrBox();
             this.idLabel = new System.Windows.Forms.Label();
             this.txtkeyInEmpName = new MyControls.StrBox();
@@ -229,8 +229,8 @@ namespace PointOfSale
             this.btnEdit = new System.Windows.Forms.Button();
             this.dtpBillDate = new MyControls.DateBox();
             this.txtBillRemark = new MyControls.StrBox();
-            this.cmbSupplier = new MyControls.MyCombo();
-            this.cmbBranch = new MyControls.MyCombo();
+            this.cmbSupplier = new MyControls.ComboList();
+            this.cmbBranch = new MyControls.ComboList();
             this.button1 = new System.Windows.Forms.Button();
             label4 = new System.Windows.Forms.Label();
             label19 = new System.Windows.Forms.Label();
@@ -272,15 +272,15 @@ namespace PointOfSale
             this.modelPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bsBrandView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsModel)).BeginInit();
-            this.productPanel0.SuspendLayout();
-            this.sizePanel0.SuspendLayout();
-            this.productPanel1.SuspendLayout();
-            this.sizePanel1.SuspendLayout();
-            this.productPanel2.SuspendLayout();
-            this.sizePanel2.SuspendLayout();
-            this.productPanel3.SuspendLayout();
-            this.sizePanel3.SuspendLayout();
-            this.footItemPanel.SuspendLayout();
+            this.panProduct0.SuspendLayout();
+            this.panSize0.SuspendLayout();
+            this.panProduct1.SuspendLayout();
+            this.panSize1.SuspendLayout();
+            this.panProduct2.SuspendLayout();
+            this.panSize2.SuspendLayout();
+            this.panProduct3.SuspendLayout();
+            this.panSize3.SuspendLayout();
+            this.panFootItem.SuspendLayout();
             this.BottomPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bsBuyBill)).BeginInit();
             this.headPanel.SuspendLayout();
@@ -607,15 +607,15 @@ namespace PointOfSale
             this.leftPanel.Controls.Add(this.myPanel2);
             this.leftPanel.Controls.Add(this.okBillPanel);
             this.leftPanel.Controls.Add(this.modelPanel);
-            this.leftPanel.Controls.Add(this.productPanel0);
-            this.leftPanel.Controls.Add(this.sizePanel0);
-            this.leftPanel.Controls.Add(this.productPanel1);
-            this.leftPanel.Controls.Add(this.sizePanel1);
-            this.leftPanel.Controls.Add(this.productPanel2);
-            this.leftPanel.Controls.Add(this.sizePanel2);
-            this.leftPanel.Controls.Add(this.productPanel3);
-            this.leftPanel.Controls.Add(this.sizePanel3);
-            this.leftPanel.Controls.Add(this.footItemPanel);
+            this.leftPanel.Controls.Add(this.panProduct0);
+            this.leftPanel.Controls.Add(this.panSize0);
+            this.leftPanel.Controls.Add(this.panProduct1);
+            this.leftPanel.Controls.Add(this.panSize1);
+            this.leftPanel.Controls.Add(this.panProduct2);
+            this.leftPanel.Controls.Add(this.panSize2);
+            this.leftPanel.Controls.Add(this.panProduct3);
+            this.leftPanel.Controls.Add(this.panSize3);
+            this.leftPanel.Controls.Add(this.panFootItem);
             this.leftPanel.Controls.Add(this.BottomPanel);
             this.leftPanel.Controls.Add(this.headPanel);
             this.leftPanel.Dock = System.Windows.Forms.DockStyle.Left;
@@ -680,6 +680,7 @@ namespace PointOfSale
             this.dgvBuyView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvBuyView.Size = new System.Drawing.Size(832, 260);
             this.dgvBuyView.TabIndex = 0;
+            this.dgvBuyView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvBuyView_CellContentClick);
             // 
             // brandNameDataGridViewTextBoxColumn
             // 
@@ -862,18 +863,18 @@ namespace PointOfSale
             this.modelPanel.Controls.Add(label4);
             this.modelPanel.Controls.Add(label19);
             this.modelPanel.Controls.Add(label3);
-            this.modelPanel.Controls.Add(this.unitsModelIntegerBox0);
+            this.modelPanel.Controls.Add(this.inbModelUnits);
             this.modelPanel.Controls.Add(label5);
             this.modelPanel.Controls.Add(label10);
-            this.modelPanel.Controls.Add(this.SizeSetModelMyCombo);
-            this.modelPanel.Controls.Add(this.setsModelIntegerBox);
+            this.modelPanel.Controls.Add(this.cmbModelSizeSet);
+            this.modelPanel.Controls.Add(this.inbModelSets);
             this.modelPanel.Controls.Add(label18);
             this.modelPanel.Controls.Add(label11);
             this.modelPanel.Controls.Add(this.cmbBrand);
-            this.modelPanel.Controls.Add(this.costModelCurrencyBox);
+            this.modelPanel.Controls.Add(this.dcbModelCost);
             this.modelPanel.Controls.Add(label8);
             this.modelPanel.Controls.Add(label12);
-            this.modelPanel.Controls.Add(this.currencyBox1);
+            this.modelPanel.Controls.Add(this.dcbModelPrice);
             this.modelPanel.Controls.Add(this.cmbModel);
             this.modelPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.modelPanel.Location = new System.Drawing.Point(10, 455);
@@ -882,41 +883,45 @@ namespace PointOfSale
             this.modelPanel.TabIndex = 21;
             this.modelPanel.Visible = false;
             // 
-            // unitsModelIntegerBox0
+            // inbModelUnits
             // 
-            this.unitsModelIntegerBox0.Cue = null;
-            this.unitsModelIntegerBox0.Location = new System.Drawing.Point(382, 26);
-            this.unitsModelIntegerBox0.Name = "unitsModelIntegerBox0";
-            this.unitsModelIntegerBox0.ReadOnly = true;
-            this.unitsModelIntegerBox0.Size = new System.Drawing.Size(46, 22);
-            this.unitsModelIntegerBox0.TabIndex = 99;
-            this.unitsModelIntegerBox0.Text = "1";
-            this.unitsModelIntegerBox0.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.unitsModelIntegerBox0.Value = 0;
+            this.inbModelUnits.Cue = null;
+            this.inbModelUnits.Location = new System.Drawing.Point(382, 26);
+            this.inbModelUnits.Name = "inbModelUnits";
+            this.inbModelUnits.ReadOnly = true;
+            this.inbModelUnits.Size = new System.Drawing.Size(46, 22);
+            this.inbModelUnits.TabIndex = 99;
+            this.inbModelUnits.Text = "1";
+            this.inbModelUnits.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.inbModelUnits.Value = 0;
             // 
-            // SizeSetModelMyCombo
+            // cmbModelSizeSet
             // 
-            this.SizeSetModelMyCombo.DisplayMember = "name";
-            this.SizeSetModelMyCombo.FormattingEnabled = true;
-            this.SizeSetModelMyCombo.Location = new System.Drawing.Point(202, 26);
-            this.SizeSetModelMyCombo.Name = "SizeSetModelMyCombo";
-            this.SizeSetModelMyCombo.Size = new System.Drawing.Size(120, 24);
-            this.SizeSetModelMyCombo.TabIndex = 93;
-            this.SizeSetModelMyCombo.ValueMember = "id";
+            this.cmbModelSizeSet.Cue = null;
+            this.cmbModelSizeSet.DisplayMember = "name";
+            this.cmbModelSizeSet.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbModelSizeSet.FormattingEnabled = true;
+            this.cmbModelSizeSet.Location = new System.Drawing.Point(202, 26);
+            this.cmbModelSizeSet.Name = "cmbModelSizeSet";
+            this.cmbModelSizeSet.Size = new System.Drawing.Size(120, 24);
+            this.cmbModelSizeSet.TabIndex = 93;
+            this.cmbModelSizeSet.ValueMember = "id";
+            this.cmbModelSizeSet.SelectedValueChanged += new System.EventHandler(this.cmbModelSizeSet_SelectedValueChanged);
             // 
-            // setsModelIntegerBox
+            // inbModelSets
             // 
-            this.setsModelIntegerBox.Cue = null;
-            this.setsModelIntegerBox.Location = new System.Drawing.Point(332, 26);
-            this.setsModelIntegerBox.Name = "setsModelIntegerBox";
-            this.setsModelIntegerBox.Size = new System.Drawing.Size(40, 22);
-            this.setsModelIntegerBox.TabIndex = 98;
-            this.setsModelIntegerBox.Text = "122";
-            this.setsModelIntegerBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.setsModelIntegerBox.Value = 0;
+            this.inbModelSets.Cue = null;
+            this.inbModelSets.Location = new System.Drawing.Point(332, 26);
+            this.inbModelSets.Name = "inbModelSets";
+            this.inbModelSets.ReadOnly = true;
+            this.inbModelSets.Size = new System.Drawing.Size(40, 22);
+            this.inbModelSets.TabIndex = 98;
+            this.inbModelSets.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.inbModelSets.Value = 0;
             // 
             // cmbBrand
             // 
+            this.cmbBrand.Cue = null;
             this.cmbBrand.DataSource = this.bsBrandView;
             this.cmbBrand.DisplayMember = "name";
             this.cmbBrand.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -926,40 +931,41 @@ namespace PointOfSale
             this.cmbBrand.Size = new System.Drawing.Size(62, 24);
             this.cmbBrand.TabIndex = 1;
             this.cmbBrand.ValueMember = "id";
-            this.cmbBrand.SelectedIndexChanged += new System.EventHandler(this.cmbBrand_SelectedIndexChanged);
+            this.cmbBrand.SelectedIndexChanged += new System.EventHandler(this.ProductPanel_Leave);
             this.cmbBrand.SelectedValueChanged += new System.EventHandler(this.cmbBrand_SelectedValueChanged);
             // 
             // bsBrandView
             // 
             this.bsBrandView.DataSource = typeof(PointOfSale.DbClass.BrandView);
             // 
-            // costModelCurrencyBox
+            // dcbModelCost
             // 
-            this.costModelCurrencyBox.Cue = null;
-            this.costModelCurrencyBox.FormatString = "C2";
-            this.costModelCurrencyBox.Location = new System.Drawing.Point(438, 26);
-            this.costModelCurrencyBox.Name = "costModelCurrencyBox";
-            this.costModelCurrencyBox.Size = new System.Drawing.Size(55, 22);
-            this.costModelCurrencyBox.TabIndex = 97;
-            this.costModelCurrencyBox.Text = "฿0.00";
-            this.costModelCurrencyBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.costModelCurrencyBox.Value = new decimal(new int[] {
+            this.dcbModelCost.Cue = null;
+            this.dcbModelCost.FormatString = "C2";
+            this.dcbModelCost.Location = new System.Drawing.Point(438, 26);
+            this.dcbModelCost.Name = "dcbModelCost";
+            this.dcbModelCost.Size = new System.Drawing.Size(55, 22);
+            this.dcbModelCost.TabIndex = 97;
+            this.dcbModelCost.Text = "฿0.00";
+            this.dcbModelCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.dcbModelCost.Value = new decimal(new int[] {
             0,
             0,
             0,
             0});
+            this.dcbModelCost.TextChanged += new System.EventHandler(this.dcbModelCost_TextChanged);
             // 
-            // currencyBox1
+            // dcbModelPrice
             // 
-            this.currencyBox1.Cue = null;
-            this.currencyBox1.FormatString = "C2";
-            this.currencyBox1.Location = new System.Drawing.Point(756, 26);
-            this.currencyBox1.Name = "currencyBox1";
-            this.currencyBox1.Size = new System.Drawing.Size(76, 22);
-            this.currencyBox1.TabIndex = 95;
-            this.currencyBox1.Text = "฿0.00";
-            this.currencyBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.currencyBox1.Value = new decimal(new int[] {
+            this.dcbModelPrice.Cue = null;
+            this.dcbModelPrice.FormatString = "C2";
+            this.dcbModelPrice.Location = new System.Drawing.Point(756, 26);
+            this.dcbModelPrice.Name = "dcbModelPrice";
+            this.dcbModelPrice.Size = new System.Drawing.Size(76, 22);
+            this.dcbModelPrice.TabIndex = 95;
+            this.dcbModelPrice.Text = "฿0.00";
+            this.dcbModelPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.dcbModelPrice.Value = new decimal(new int[] {
             0,
             0,
             0,
@@ -967,1078 +973,1135 @@ namespace PointOfSale
             // 
             // cmbModel
             // 
-            this.cmbModel.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.cmbModel.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cmbModel.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.cmbModel.Cue = null;
             this.cmbModel.DataSource = this.bsModel;
             this.cmbModel.DisplayMember = "name";
             this.cmbModel.FormattingEnabled = true;
+            this.cmbModel.isAlwaysDropperDown = false;
             this.cmbModel.Location = new System.Drawing.Point(72, 26);
             this.cmbModel.Name = "cmbModel";
             this.cmbModel.Size = new System.Drawing.Size(120, 24);
             this.cmbModel.TabIndex = 2;
             this.cmbModel.ValueMember = "id";
+            this.cmbModel.TextChanged += new System.EventHandler(this.cmbModel_TextChanged);
+            this.cmbModel.Click += new System.EventHandler(this.cmbModel_Click);
+            this.cmbModel.Enter += new System.EventHandler(this.cmbModel_Enter);
+            this.cmbModel.Leave += new System.EventHandler(this.cmbModel_Leave);
             // 
             // bsModel
             // 
             this.bsModel.DataMember = "modelCodes";
             this.bsModel.DataSource = this.bsBrandView;
             // 
-            // productPanel0
+            // panProduct0
             // 
-            this.productPanel0.Controls.Add(this.remarkStrBox0);
-            this.productPanel0.Controls.Add(this.ColorMyCombo0);
-            this.productPanel0.Controls.Add(this.SizeSetMyCombo0);
-            this.productPanel0.Controls.Add(this.CostCurrencyBox0);
-            this.productPanel0.Controls.Add(this.setsIntegerBox0);
-            this.productPanel0.Controls.Add(this.unitsIntegerBox0);
-            this.productPanel0.Controls.Add(this.amountcurrencyBox0);
-            this.productPanel0.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.productPanel0.Location = new System.Drawing.Point(10, 508);
-            this.productPanel0.Name = "productPanel0";
-            this.productPanel0.Size = new System.Drawing.Size(832, 32);
-            this.productPanel0.TabIndex = 20;
-            this.productPanel0.Visible = false;
+            this.panProduct0.Controls.Add(this.txtRemark0);
+            this.panProduct0.Controls.Add(this.cmbColor0);
+            this.panProduct0.Controls.Add(this.cmbSizeSet0);
+            this.panProduct0.Controls.Add(this.dcbCost0);
+            this.panProduct0.Controls.Add(this.inbSets0);
+            this.panProduct0.Controls.Add(this.inbUnits0);
+            this.panProduct0.Controls.Add(this.dcbAmount0);
+            this.panProduct0.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panProduct0.Location = new System.Drawing.Point(10, 508);
+            this.panProduct0.Name = "panProduct0";
+            this.panProduct0.Size = new System.Drawing.Size(832, 32);
+            this.panProduct0.TabIndex = 20;
+            this.panProduct0.Visible = false;
+            this.panProduct0.Enter += new System.EventHandler(this.ProductPanel_Enter);
+            this.panProduct0.Leave += new System.EventHandler(this.ProductPanel_Leave);
             // 
-            // remarkStrBox0
+            // txtRemark0
             // 
-            this.remarkStrBox0.Cue = null;
-            this.remarkStrBox0.Location = new System.Drawing.Point(583, 6);
-            this.remarkStrBox0.Name = "remarkStrBox0";
-            this.remarkStrBox0.Size = new System.Drawing.Size(249, 22);
-            this.remarkStrBox0.TabIndex = 8;
+            this.txtRemark0.Cue = null;
+            this.txtRemark0.Location = new System.Drawing.Point(583, 6);
+            this.txtRemark0.Name = "txtRemark0";
+            this.txtRemark0.Size = new System.Drawing.Size(249, 22);
+            this.txtRemark0.TabIndex = 8;
             // 
-            // ColorMyCombo0
+            // cmbColor0
             // 
-            this.ColorMyCombo0.DisplayMember = "name";
-            this.ColorMyCombo0.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ColorMyCombo0.FormattingEnabled = true;
-            this.ColorMyCombo0.Location = new System.Drawing.Point(132, 5);
-            this.ColorMyCombo0.Name = "ColorMyCombo0";
-            this.ColorMyCombo0.Size = new System.Drawing.Size(60, 24);
-            this.ColorMyCombo0.TabIndex = 5;
-            this.ColorMyCombo0.ValueMember = "id";
+            this.cmbColor0.Cue = null;
+            this.cmbColor0.DisplayMember = "name";
+            this.cmbColor0.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbColor0.FormattingEnabled = true;
+            this.cmbColor0.Location = new System.Drawing.Point(132, 5);
+            this.cmbColor0.Name = "cmbColor0";
+            this.cmbColor0.Size = new System.Drawing.Size(60, 24);
+            this.cmbColor0.TabIndex = 5;
+            this.cmbColor0.ValueMember = "id";
+            this.cmbColor0.Leave += new System.EventHandler(this.cmbColor_Leave);
             // 
-            // SizeSetMyCombo0
+            // cmbSizeSet0
             // 
-            this.SizeSetMyCombo0.DisplayMember = "name";
-            this.SizeSetMyCombo0.FormattingEnabled = true;
-            this.SizeSetMyCombo0.Location = new System.Drawing.Point(202, 6);
-            this.SizeSetMyCombo0.Name = "SizeSetMyCombo0";
-            this.SizeSetMyCombo0.Size = new System.Drawing.Size(120, 24);
-            this.SizeSetMyCombo0.TabIndex = 3;
-            this.SizeSetMyCombo0.ValueMember = "id";
+            this.cmbSizeSet0.Cue = null;
+            this.cmbSizeSet0.DisplayMember = "name";
+            this.cmbSizeSet0.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSizeSet0.FormattingEnabled = true;
+            this.cmbSizeSet0.Location = new System.Drawing.Point(202, 6);
+            this.cmbSizeSet0.Name = "cmbSizeSet0";
+            this.cmbSizeSet0.Size = new System.Drawing.Size(120, 24);
+            this.cmbSizeSet0.TabIndex = 3;
+            this.cmbSizeSet0.ValueMember = "id";
+            this.cmbSizeSet0.SelectedIndexChanged += new System.EventHandler(this.cmbSizeSet_SelectedIndexChanged);
+            this.cmbSizeSet0.SelectedValueChanged += new System.EventHandler(this.cmbSizeSet_SelectedValueChanged);
             // 
-            // CostCurrencyBox0
+            // dcbCost0
             // 
-            this.CostCurrencyBox0.Cue = null;
-            this.CostCurrencyBox0.FormatString = "C2";
-            this.CostCurrencyBox0.Location = new System.Drawing.Point(438, 6);
-            this.CostCurrencyBox0.Name = "CostCurrencyBox0";
-            this.CostCurrencyBox0.Size = new System.Drawing.Size(55, 22);
-            this.CostCurrencyBox0.TabIndex = 6;
-            this.CostCurrencyBox0.Text = "฿0.00";
-            this.CostCurrencyBox0.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.CostCurrencyBox0.Value = new decimal(new int[] {
+            this.dcbCost0.Cue = null;
+            this.dcbCost0.FormatString = "C2";
+            this.dcbCost0.Location = new System.Drawing.Point(438, 6);
+            this.dcbCost0.Name = "dcbCost0";
+            this.dcbCost0.Size = new System.Drawing.Size(55, 22);
+            this.dcbCost0.TabIndex = 6;
+            this.dcbCost0.Text = "฿0.00";
+            this.dcbCost0.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.dcbCost0.Value = new decimal(new int[] {
             0,
             0,
             0,
             0});
             // 
-            // setsIntegerBox0
+            // inbSets0
             // 
-            this.setsIntegerBox0.Cue = null;
-            this.setsIntegerBox0.Location = new System.Drawing.Point(332, 6);
-            this.setsIntegerBox0.Name = "setsIntegerBox0";
-            this.setsIntegerBox0.Size = new System.Drawing.Size(40, 22);
-            this.setsIntegerBox0.TabIndex = 4;
-            this.setsIntegerBox0.Text = "1";
-            this.setsIntegerBox0.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.setsIntegerBox0.Value = 0;
+            this.inbSets0.Cue = null;
+            this.inbSets0.Location = new System.Drawing.Point(332, 6);
+            this.inbSets0.Name = "inbSets0";
+            this.inbSets0.Size = new System.Drawing.Size(40, 22);
+            this.inbSets0.TabIndex = 4;
+            this.inbSets0.Text = "1";
+            this.inbSets0.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.inbSets0.Value = 0;
+            this.inbSets0.TextChanged += new System.EventHandler(this.inbSets_TextChanged);
             // 
-            // unitsIntegerBox0
+            // inbUnits0
             // 
-            this.unitsIntegerBox0.Cue = null;
-            this.unitsIntegerBox0.Location = new System.Drawing.Point(382, 6);
-            this.unitsIntegerBox0.Name = "unitsIntegerBox0";
-            this.unitsIntegerBox0.ReadOnly = true;
-            this.unitsIntegerBox0.Size = new System.Drawing.Size(46, 22);
-            this.unitsIntegerBox0.TabIndex = 92;
-            this.unitsIntegerBox0.Text = "1";
-            this.unitsIntegerBox0.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.unitsIntegerBox0.Value = 0;
+            this.inbUnits0.Cue = null;
+            this.inbUnits0.Location = new System.Drawing.Point(382, 6);
+            this.inbUnits0.Name = "inbUnits0";
+            this.inbUnits0.ReadOnly = true;
+            this.inbUnits0.Size = new System.Drawing.Size(46, 22);
+            this.inbUnits0.TabIndex = 92;
+            this.inbUnits0.Text = "1";
+            this.inbUnits0.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.inbUnits0.Value = 0;
             // 
-            // amountcurrencyBox0
+            // dcbAmount0
             // 
-            this.amountcurrencyBox0.Cue = null;
-            this.amountcurrencyBox0.FormatString = "C2";
-            this.amountcurrencyBox0.Location = new System.Drawing.Point(503, 6);
-            this.amountcurrencyBox0.Name = "amountcurrencyBox0";
-            this.amountcurrencyBox0.ReadOnly = true;
-            this.amountcurrencyBox0.Size = new System.Drawing.Size(70, 22);
-            this.amountcurrencyBox0.TabIndex = 69;
-            this.amountcurrencyBox0.Text = "฿0.00";
-            this.amountcurrencyBox0.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.amountcurrencyBox0.Value = new decimal(new int[] {
+            this.dcbAmount0.Cue = null;
+            this.dcbAmount0.FormatString = "C2";
+            this.dcbAmount0.Location = new System.Drawing.Point(503, 6);
+            this.dcbAmount0.Name = "dcbAmount0";
+            this.dcbAmount0.ReadOnly = true;
+            this.dcbAmount0.Size = new System.Drawing.Size(70, 22);
+            this.dcbAmount0.TabIndex = 69;
+            this.dcbAmount0.Text = "฿0.00";
+            this.dcbAmount0.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.dcbAmount0.Value = new decimal(new int[] {
             0,
             0,
             0,
             0});
             // 
-            // sizePanel0
+            // panSize0
             // 
-            this.sizePanel0.Controls.Add(this.sizeMyCombo05);
-            this.sizePanel0.Controls.Add(this.sizeMyCombo00);
-            this.sizePanel0.Controls.Add(this.unitSizeIntBox05);
-            this.sizePanel0.Controls.Add(this.unitSizeIntBox02);
-            this.sizePanel0.Controls.Add(this.unitSizeIntBox04);
-            this.sizePanel0.Controls.Add(this.unitSizeIntBox03);
-            this.sizePanel0.Controls.Add(this.unitSizeIntBox00);
-            this.sizePanel0.Controls.Add(this.sizeMyCombo04);
-            this.sizePanel0.Controls.Add(this.unitSizeIntBox01);
-            this.sizePanel0.Controls.Add(this.sizeMyCombo01);
-            this.sizePanel0.Controls.Add(label15);
-            this.sizePanel0.Controls.Add(this.sizeMyCombo03);
-            this.sizePanel0.Controls.Add(this.sizeMyCombo02);
-            this.sizePanel0.Controls.Add(label16);
-            this.sizePanel0.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.sizePanel0.Location = new System.Drawing.Point(10, 540);
-            this.sizePanel0.Name = "sizePanel0";
-            this.sizePanel0.Size = new System.Drawing.Size(832, 66);
-            this.sizePanel0.TabIndex = 19;
-            this.sizePanel0.Visible = false;
+            this.panSize0.Controls.Add(this.cmbSize05);
+            this.panSize0.Controls.Add(this.cmbSize00);
+            this.panSize0.Controls.Add(this.inbUnitSize05);
+            this.panSize0.Controls.Add(this.inbUnitSize02);
+            this.panSize0.Controls.Add(this.inbUnitSize04);
+            this.panSize0.Controls.Add(this.inbUnitSize03);
+            this.panSize0.Controls.Add(this.inbUnitSize00);
+            this.panSize0.Controls.Add(this.cmbSize04);
+            this.panSize0.Controls.Add(this.inbUnitSize01);
+            this.panSize0.Controls.Add(this.cmbSize01);
+            this.panSize0.Controls.Add(label15);
+            this.panSize0.Controls.Add(this.cmbSize03);
+            this.panSize0.Controls.Add(this.cmbSize02);
+            this.panSize0.Controls.Add(label16);
+            this.panSize0.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panSize0.Location = new System.Drawing.Point(10, 540);
+            this.panSize0.Name = "panSize0";
+            this.panSize0.Size = new System.Drawing.Size(832, 66);
+            this.panSize0.TabIndex = 19;
+            this.panSize0.Visible = false;
             // 
-            // sizeMyCombo05
+            // cmbSize05
             // 
-            this.sizeMyCombo05.DisplayMember = "id";
-            this.sizeMyCombo05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.sizeMyCombo05.Enabled = false;
-            this.sizeMyCombo05.FormattingEnabled = true;
-            this.sizeMyCombo05.Location = new System.Drawing.Point(452, 6);
-            this.sizeMyCombo05.Name = "sizeMyCombo05";
-            this.sizeMyCombo05.Size = new System.Drawing.Size(40, 24);
-            this.sizeMyCombo05.TabIndex = 100;
-            this.sizeMyCombo05.ValueMember = "id";
+            this.cmbSize05.Cue = null;
+            this.cmbSize05.DisplayMember = "id";
+            this.cmbSize05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSize05.Enabled = false;
+            this.cmbSize05.FormattingEnabled = true;
+            this.cmbSize05.Location = new System.Drawing.Point(452, 6);
+            this.cmbSize05.Name = "cmbSize05";
+            this.cmbSize05.Size = new System.Drawing.Size(40, 24);
+            this.cmbSize05.TabIndex = 100;
+            this.cmbSize05.ValueMember = "id";
             // 
-            // sizeMyCombo00
+            // cmbSize00
             // 
-            this.sizeMyCombo00.DisplayMember = "id";
-            this.sizeMyCombo00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.sizeMyCombo00.Enabled = false;
-            this.sizeMyCombo00.FormattingEnabled = true;
-            this.sizeMyCombo00.Location = new System.Drawing.Point(202, 6);
-            this.sizeMyCombo00.Name = "sizeMyCombo00";
-            this.sizeMyCombo00.Size = new System.Drawing.Size(40, 24);
-            this.sizeMyCombo00.TabIndex = 101;
-            this.sizeMyCombo00.ValueMember = "id";
+            this.cmbSize00.Cue = null;
+            this.cmbSize00.DisplayMember = "id";
+            this.cmbSize00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSize00.Enabled = false;
+            this.cmbSize00.FormattingEnabled = true;
+            this.cmbSize00.Location = new System.Drawing.Point(202, 6);
+            this.cmbSize00.Name = "cmbSize00";
+            this.cmbSize00.Size = new System.Drawing.Size(40, 24);
+            this.cmbSize00.TabIndex = 101;
+            this.cmbSize00.ValueMember = "id";
             // 
-            // unitSizeIntBox05
+            // inbUnitSize05
             // 
-            this.unitSizeIntBox05.Cue = null;
-            this.unitSizeIntBox05.Location = new System.Drawing.Point(452, 39);
-            this.unitSizeIntBox05.Name = "unitSizeIntBox05";
-            this.unitSizeIntBox05.Size = new System.Drawing.Size(40, 22);
-            this.unitSizeIntBox05.TabIndex = 95;
-            this.unitSizeIntBox05.Text = "1";
-            this.unitSizeIntBox05.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.unitSizeIntBox05.Value = 0;
+            this.inbUnitSize05.Cue = null;
+            this.inbUnitSize05.Location = new System.Drawing.Point(452, 39);
+            this.inbUnitSize05.Name = "inbUnitSize05";
+            this.inbUnitSize05.Size = new System.Drawing.Size(40, 22);
+            this.inbUnitSize05.TabIndex = 95;
+            this.inbUnitSize05.Text = "1";
+            this.inbUnitSize05.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.inbUnitSize05.Value = 0;
             // 
-            // unitSizeIntBox02
+            // inbUnitSize02
             // 
-            this.unitSizeIntBox02.Cue = null;
-            this.unitSizeIntBox02.Location = new System.Drawing.Point(302, 39);
-            this.unitSizeIntBox02.Name = "unitSizeIntBox02";
-            this.unitSizeIntBox02.Size = new System.Drawing.Size(40, 22);
-            this.unitSizeIntBox02.TabIndex = 85;
-            this.unitSizeIntBox02.Text = "1";
-            this.unitSizeIntBox02.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.unitSizeIntBox02.Value = 0;
+            this.inbUnitSize02.Cue = null;
+            this.inbUnitSize02.Location = new System.Drawing.Point(302, 39);
+            this.inbUnitSize02.Name = "inbUnitSize02";
+            this.inbUnitSize02.Size = new System.Drawing.Size(40, 22);
+            this.inbUnitSize02.TabIndex = 85;
+            this.inbUnitSize02.Text = "1";
+            this.inbUnitSize02.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.inbUnitSize02.Value = 0;
             // 
-            // unitSizeIntBox04
+            // inbUnitSize04
             // 
-            this.unitSizeIntBox04.Cue = null;
-            this.unitSizeIntBox04.Location = new System.Drawing.Point(402, 39);
-            this.unitSizeIntBox04.Name = "unitSizeIntBox04";
-            this.unitSizeIntBox04.Size = new System.Drawing.Size(40, 22);
-            this.unitSizeIntBox04.TabIndex = 94;
-            this.unitSizeIntBox04.Text = "1";
-            this.unitSizeIntBox04.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.unitSizeIntBox04.Value = 0;
+            this.inbUnitSize04.Cue = null;
+            this.inbUnitSize04.Location = new System.Drawing.Point(402, 39);
+            this.inbUnitSize04.Name = "inbUnitSize04";
+            this.inbUnitSize04.Size = new System.Drawing.Size(40, 22);
+            this.inbUnitSize04.TabIndex = 94;
+            this.inbUnitSize04.Text = "1";
+            this.inbUnitSize04.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.inbUnitSize04.Value = 0;
             // 
-            // unitSizeIntBox03
+            // inbUnitSize03
             // 
-            this.unitSizeIntBox03.Cue = null;
-            this.unitSizeIntBox03.Location = new System.Drawing.Point(352, 39);
-            this.unitSizeIntBox03.Name = "unitSizeIntBox03";
-            this.unitSizeIntBox03.Size = new System.Drawing.Size(40, 22);
-            this.unitSizeIntBox03.TabIndex = 86;
-            this.unitSizeIntBox03.Text = "1";
-            this.unitSizeIntBox03.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.unitSizeIntBox03.Value = 0;
+            this.inbUnitSize03.Cue = null;
+            this.inbUnitSize03.Location = new System.Drawing.Point(352, 39);
+            this.inbUnitSize03.Name = "inbUnitSize03";
+            this.inbUnitSize03.Size = new System.Drawing.Size(40, 22);
+            this.inbUnitSize03.TabIndex = 86;
+            this.inbUnitSize03.Text = "1";
+            this.inbUnitSize03.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.inbUnitSize03.Value = 0;
             // 
-            // unitSizeIntBox00
+            // inbUnitSize00
             // 
-            this.unitSizeIntBox00.Cue = null;
-            this.unitSizeIntBox00.Location = new System.Drawing.Point(202, 39);
-            this.unitSizeIntBox00.Name = "unitSizeIntBox00";
-            this.unitSizeIntBox00.Size = new System.Drawing.Size(40, 22);
-            this.unitSizeIntBox00.TabIndex = 96;
-            this.unitSizeIntBox00.Text = "1";
-            this.unitSizeIntBox00.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.unitSizeIntBox00.Value = 0;
+            this.inbUnitSize00.Cue = null;
+            this.inbUnitSize00.Location = new System.Drawing.Point(202, 39);
+            this.inbUnitSize00.Name = "inbUnitSize00";
+            this.inbUnitSize00.Size = new System.Drawing.Size(40, 22);
+            this.inbUnitSize00.TabIndex = 96;
+            this.inbUnitSize00.Text = "1";
+            this.inbUnitSize00.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.inbUnitSize00.Value = 0;
             // 
-            // sizeMyCombo04
+            // cmbSize04
             // 
-            this.sizeMyCombo04.DisplayMember = "id";
-            this.sizeMyCombo04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.sizeMyCombo04.Enabled = false;
-            this.sizeMyCombo04.FormattingEnabled = true;
-            this.sizeMyCombo04.Location = new System.Drawing.Point(402, 6);
-            this.sizeMyCombo04.Name = "sizeMyCombo04";
-            this.sizeMyCombo04.Size = new System.Drawing.Size(40, 24);
-            this.sizeMyCombo04.TabIndex = 99;
-            this.sizeMyCombo04.ValueMember = "id";
+            this.cmbSize04.Cue = null;
+            this.cmbSize04.DisplayMember = "id";
+            this.cmbSize04.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSize04.Enabled = false;
+            this.cmbSize04.FormattingEnabled = true;
+            this.cmbSize04.Location = new System.Drawing.Point(402, 6);
+            this.cmbSize04.Name = "cmbSize04";
+            this.cmbSize04.Size = new System.Drawing.Size(40, 24);
+            this.cmbSize04.TabIndex = 99;
+            this.cmbSize04.ValueMember = "id";
             // 
-            // unitSizeIntBox01
+            // inbUnitSize01
             // 
-            this.unitSizeIntBox01.Cue = null;
-            this.unitSizeIntBox01.Location = new System.Drawing.Point(252, 39);
-            this.unitSizeIntBox01.Name = "unitSizeIntBox01";
-            this.unitSizeIntBox01.Size = new System.Drawing.Size(40, 22);
-            this.unitSizeIntBox01.TabIndex = 84;
-            this.unitSizeIntBox01.Text = "1";
-            this.unitSizeIntBox01.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.unitSizeIntBox01.Value = 0;
+            this.inbUnitSize01.Cue = null;
+            this.inbUnitSize01.Location = new System.Drawing.Point(252, 39);
+            this.inbUnitSize01.Name = "inbUnitSize01";
+            this.inbUnitSize01.Size = new System.Drawing.Size(40, 22);
+            this.inbUnitSize01.TabIndex = 84;
+            this.inbUnitSize01.Text = "1";
+            this.inbUnitSize01.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.inbUnitSize01.Value = 0;
             // 
-            // sizeMyCombo01
+            // cmbSize01
             // 
-            this.sizeMyCombo01.DisplayMember = "id";
-            this.sizeMyCombo01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.sizeMyCombo01.FormattingEnabled = true;
-            this.sizeMyCombo01.Location = new System.Drawing.Point(252, 6);
-            this.sizeMyCombo01.Name = "sizeMyCombo01";
-            this.sizeMyCombo01.Size = new System.Drawing.Size(40, 24);
-            this.sizeMyCombo01.TabIndex = 77;
-            this.sizeMyCombo01.ValueMember = "id";
+            this.cmbSize01.Cue = null;
+            this.cmbSize01.DisplayMember = "id";
+            this.cmbSize01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSize01.FormattingEnabled = true;
+            this.cmbSize01.Location = new System.Drawing.Point(252, 6);
+            this.cmbSize01.Name = "cmbSize01";
+            this.cmbSize01.Size = new System.Drawing.Size(40, 24);
+            this.cmbSize01.TabIndex = 77;
+            this.cmbSize01.ValueMember = "id";
             // 
-            // sizeMyCombo03
+            // cmbSize03
             // 
-            this.sizeMyCombo03.DisplayMember = "id";
-            this.sizeMyCombo03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.sizeMyCombo03.Enabled = false;
-            this.sizeMyCombo03.FormattingEnabled = true;
-            this.sizeMyCombo03.Location = new System.Drawing.Point(352, 6);
-            this.sizeMyCombo03.Name = "sizeMyCombo03";
-            this.sizeMyCombo03.Size = new System.Drawing.Size(40, 24);
-            this.sizeMyCombo03.TabIndex = 98;
-            this.sizeMyCombo03.ValueMember = "id";
+            this.cmbSize03.Cue = null;
+            this.cmbSize03.DisplayMember = "id";
+            this.cmbSize03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSize03.Enabled = false;
+            this.cmbSize03.FormattingEnabled = true;
+            this.cmbSize03.Location = new System.Drawing.Point(352, 6);
+            this.cmbSize03.Name = "cmbSize03";
+            this.cmbSize03.Size = new System.Drawing.Size(40, 24);
+            this.cmbSize03.TabIndex = 98;
+            this.cmbSize03.ValueMember = "id";
             // 
-            // sizeMyCombo02
+            // cmbSize02
             // 
-            this.sizeMyCombo02.DisplayMember = "id";
-            this.sizeMyCombo02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.sizeMyCombo02.Enabled = false;
-            this.sizeMyCombo02.FormattingEnabled = true;
-            this.sizeMyCombo02.Location = new System.Drawing.Point(302, 6);
-            this.sizeMyCombo02.Name = "sizeMyCombo02";
-            this.sizeMyCombo02.Size = new System.Drawing.Size(40, 24);
-            this.sizeMyCombo02.TabIndex = 97;
-            this.sizeMyCombo02.ValueMember = "id";
+            this.cmbSize02.Cue = null;
+            this.cmbSize02.DisplayMember = "id";
+            this.cmbSize02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSize02.Enabled = false;
+            this.cmbSize02.FormattingEnabled = true;
+            this.cmbSize02.Location = new System.Drawing.Point(302, 6);
+            this.cmbSize02.Name = "cmbSize02";
+            this.cmbSize02.Size = new System.Drawing.Size(40, 24);
+            this.cmbSize02.TabIndex = 97;
+            this.cmbSize02.ValueMember = "id";
             // 
-            // productPanel1
+            // panProduct1
             // 
-            this.productPanel1.Controls.Add(this.remarkStrBox1);
-            this.productPanel1.Controls.Add(this.SizeSetMyCombo1);
-            this.productPanel1.Controls.Add(this.CostCurrencyBox1);
-            this.productPanel1.Controls.Add(this.setsIntegerBox1);
-            this.productPanel1.Controls.Add(this.ColorMyCombo1);
-            this.productPanel1.Controls.Add(this.amountcurrencyBox1);
-            this.productPanel1.Controls.Add(this.unitsIntegerBox1);
-            this.productPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.productPanel1.Location = new System.Drawing.Point(10, 606);
-            this.productPanel1.Name = "productPanel1";
-            this.productPanel1.Size = new System.Drawing.Size(832, 32);
-            this.productPanel1.TabIndex = 18;
-            this.productPanel1.Visible = false;
+            this.panProduct1.Controls.Add(this.txtRemark1);
+            this.panProduct1.Controls.Add(this.cmbSizeSet1);
+            this.panProduct1.Controls.Add(this.dcbCost1);
+            this.panProduct1.Controls.Add(this.inbSets1);
+            this.panProduct1.Controls.Add(this.cmbColor1);
+            this.panProduct1.Controls.Add(this.dcbAmount1);
+            this.panProduct1.Controls.Add(this.inbUnits1);
+            this.panProduct1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panProduct1.Location = new System.Drawing.Point(10, 606);
+            this.panProduct1.Name = "panProduct1";
+            this.panProduct1.Size = new System.Drawing.Size(832, 32);
+            this.panProduct1.TabIndex = 18;
+            this.panProduct1.Visible = false;
+            this.panProduct1.Enter += new System.EventHandler(this.ProductPanel_Enter);
+            this.panProduct1.Leave += new System.EventHandler(this.ProductPanel_Leave);
             // 
-            // remarkStrBox1
+            // txtRemark1
             // 
-            this.remarkStrBox1.Cue = null;
-            this.remarkStrBox1.Location = new System.Drawing.Point(583, 5);
-            this.remarkStrBox1.Name = "remarkStrBox1";
-            this.remarkStrBox1.Size = new System.Drawing.Size(249, 22);
-            this.remarkStrBox1.TabIndex = 8;
+            this.txtRemark1.Cue = null;
+            this.txtRemark1.Location = new System.Drawing.Point(583, 5);
+            this.txtRemark1.Name = "txtRemark1";
+            this.txtRemark1.Size = new System.Drawing.Size(249, 22);
+            this.txtRemark1.TabIndex = 8;
             // 
-            // SizeSetMyCombo1
+            // cmbSizeSet1
             // 
-            this.SizeSetMyCombo1.DisplayMember = "name";
-            this.SizeSetMyCombo1.FormattingEnabled = true;
-            this.SizeSetMyCombo1.Location = new System.Drawing.Point(202, 5);
-            this.SizeSetMyCombo1.Name = "SizeSetMyCombo1";
-            this.SizeSetMyCombo1.Size = new System.Drawing.Size(120, 24);
-            this.SizeSetMyCombo1.TabIndex = 3;
-            this.SizeSetMyCombo1.ValueMember = "id";
+            this.cmbSizeSet1.Cue = null;
+            this.cmbSizeSet1.DisplayMember = "name";
+            this.cmbSizeSet1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSizeSet1.FormattingEnabled = true;
+            this.cmbSizeSet1.Location = new System.Drawing.Point(202, 5);
+            this.cmbSizeSet1.Name = "cmbSizeSet1";
+            this.cmbSizeSet1.Size = new System.Drawing.Size(120, 24);
+            this.cmbSizeSet1.TabIndex = 3;
+            this.cmbSizeSet1.ValueMember = "id";
+            this.cmbSizeSet1.SelectedValueChanged += new System.EventHandler(this.cmbSizeSet_SelectedValueChanged);
             // 
-            // CostCurrencyBox1
+            // dcbCost1
             // 
-            this.CostCurrencyBox1.Cue = null;
-            this.CostCurrencyBox1.FormatString = "C2";
-            this.CostCurrencyBox1.Location = new System.Drawing.Point(438, 5);
-            this.CostCurrencyBox1.Name = "CostCurrencyBox1";
-            this.CostCurrencyBox1.Size = new System.Drawing.Size(55, 22);
-            this.CostCurrencyBox1.TabIndex = 6;
-            this.CostCurrencyBox1.Text = "฿0.00";
-            this.CostCurrencyBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.CostCurrencyBox1.Value = new decimal(new int[] {
+            this.dcbCost1.Cue = null;
+            this.dcbCost1.FormatString = "C2";
+            this.dcbCost1.Location = new System.Drawing.Point(438, 5);
+            this.dcbCost1.Name = "dcbCost1";
+            this.dcbCost1.Size = new System.Drawing.Size(55, 22);
+            this.dcbCost1.TabIndex = 6;
+            this.dcbCost1.Text = "฿0.00";
+            this.dcbCost1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.dcbCost1.Value = new decimal(new int[] {
             0,
             0,
             0,
             0});
             // 
-            // setsIntegerBox1
+            // inbSets1
             // 
-            this.setsIntegerBox1.Cue = null;
-            this.setsIntegerBox1.Location = new System.Drawing.Point(332, 5);
-            this.setsIntegerBox1.Name = "setsIntegerBox1";
-            this.setsIntegerBox1.Size = new System.Drawing.Size(40, 22);
-            this.setsIntegerBox1.TabIndex = 4;
-            this.setsIntegerBox1.Text = "1";
-            this.setsIntegerBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.setsIntegerBox1.Value = 0;
+            this.inbSets1.Cue = null;
+            this.inbSets1.Location = new System.Drawing.Point(332, 5);
+            this.inbSets1.Name = "inbSets1";
+            this.inbSets1.Size = new System.Drawing.Size(40, 22);
+            this.inbSets1.TabIndex = 4;
+            this.inbSets1.Text = "1";
+            this.inbSets1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.inbSets1.Value = 0;
             // 
-            // ColorMyCombo1
+            // cmbColor1
             // 
-            this.ColorMyCombo1.DisplayMember = "name";
-            this.ColorMyCombo1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ColorMyCombo1.FormattingEnabled = true;
-            this.ColorMyCombo1.Location = new System.Drawing.Point(132, 5);
-            this.ColorMyCombo1.Name = "ColorMyCombo1";
-            this.ColorMyCombo1.Size = new System.Drawing.Size(60, 24);
-            this.ColorMyCombo1.TabIndex = 5;
-            this.ColorMyCombo1.ValueMember = "id";
+            this.cmbColor1.Cue = null;
+            this.cmbColor1.DisplayMember = "name";
+            this.cmbColor1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbColor1.FormattingEnabled = true;
+            this.cmbColor1.Location = new System.Drawing.Point(132, 5);
+            this.cmbColor1.Name = "cmbColor1";
+            this.cmbColor1.Size = new System.Drawing.Size(60, 24);
+            this.cmbColor1.TabIndex = 5;
+            this.cmbColor1.ValueMember = "id";
             // 
-            // amountcurrencyBox1
+            // dcbAmount1
             // 
-            this.amountcurrencyBox1.Cue = null;
-            this.amountcurrencyBox1.FormatString = "C2";
-            this.amountcurrencyBox1.Location = new System.Drawing.Point(503, 5);
-            this.amountcurrencyBox1.Name = "amountcurrencyBox1";
-            this.amountcurrencyBox1.ReadOnly = true;
-            this.amountcurrencyBox1.Size = new System.Drawing.Size(70, 22);
-            this.amountcurrencyBox1.TabIndex = 69;
-            this.amountcurrencyBox1.Text = "฿0.00";
-            this.amountcurrencyBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.amountcurrencyBox1.Value = new decimal(new int[] {
+            this.dcbAmount1.Cue = null;
+            this.dcbAmount1.FormatString = "C2";
+            this.dcbAmount1.Location = new System.Drawing.Point(503, 5);
+            this.dcbAmount1.Name = "dcbAmount1";
+            this.dcbAmount1.ReadOnly = true;
+            this.dcbAmount1.Size = new System.Drawing.Size(70, 22);
+            this.dcbAmount1.TabIndex = 69;
+            this.dcbAmount1.Text = "฿0.00";
+            this.dcbAmount1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.dcbAmount1.Value = new decimal(new int[] {
             0,
             0,
             0,
             0});
             // 
-            // unitsIntegerBox1
+            // inbUnits1
             // 
-            this.unitsIntegerBox1.Cue = null;
-            this.unitsIntegerBox1.Location = new System.Drawing.Point(382, 5);
-            this.unitsIntegerBox1.Name = "unitsIntegerBox1";
-            this.unitsIntegerBox1.ReadOnly = true;
-            this.unitsIntegerBox1.Size = new System.Drawing.Size(46, 22);
-            this.unitsIntegerBox1.TabIndex = 92;
-            this.unitsIntegerBox1.Text = "1";
-            this.unitsIntegerBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.unitsIntegerBox1.Value = 0;
+            this.inbUnits1.Cue = null;
+            this.inbUnits1.Location = new System.Drawing.Point(382, 5);
+            this.inbUnits1.Name = "inbUnits1";
+            this.inbUnits1.ReadOnly = true;
+            this.inbUnits1.Size = new System.Drawing.Size(46, 22);
+            this.inbUnits1.TabIndex = 92;
+            this.inbUnits1.Text = "1";
+            this.inbUnits1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.inbUnits1.Value = 0;
             // 
-            // sizePanel1
+            // panSize1
             // 
-            this.sizePanel1.Controls.Add(label9);
-            this.sizePanel1.Controls.Add(this.sizeMyCombo15);
-            this.sizePanel1.Controls.Add(this.sizeMyCombo10);
-            this.sizePanel1.Controls.Add(this.sizeMyCombo11);
-            this.sizePanel1.Controls.Add(this.unitSizeIntBox11);
-            this.sizePanel1.Controls.Add(this.sizeMyCombo13);
-            this.sizePanel1.Controls.Add(this.unitSizeIntBox15);
-            this.sizePanel1.Controls.Add(this.sizeMyCombo14);
-            this.sizePanel1.Controls.Add(this.unitSizeIntBox12);
-            this.sizePanel1.Controls.Add(this.unitSizeIntBox14);
-            this.sizePanel1.Controls.Add(this.unitSizeIntBox13);
-            this.sizePanel1.Controls.Add(this.unitSizeIntBox10);
-            this.sizePanel1.Controls.Add(this.sizeMyCombo12);
-            this.sizePanel1.Controls.Add(label20);
-            this.sizePanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.sizePanel1.Location = new System.Drawing.Point(10, 638);
-            this.sizePanel1.Name = "sizePanel1";
-            this.sizePanel1.Size = new System.Drawing.Size(832, 66);
-            this.sizePanel1.TabIndex = 17;
-            this.sizePanel1.Visible = false;
+            this.panSize1.Controls.Add(label9);
+            this.panSize1.Controls.Add(this.cmbSize15);
+            this.panSize1.Controls.Add(this.cmbSize10);
+            this.panSize1.Controls.Add(this.cmbSize11);
+            this.panSize1.Controls.Add(this.inbUnitSize11);
+            this.panSize1.Controls.Add(this.cmbSize13);
+            this.panSize1.Controls.Add(this.inbUnitSize15);
+            this.panSize1.Controls.Add(this.cmbSize14);
+            this.panSize1.Controls.Add(this.inbUnitSize12);
+            this.panSize1.Controls.Add(this.inbUnitSize14);
+            this.panSize1.Controls.Add(this.inbUnitSize13);
+            this.panSize1.Controls.Add(this.inbUnitSize10);
+            this.panSize1.Controls.Add(this.cmbSize12);
+            this.panSize1.Controls.Add(label20);
+            this.panSize1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panSize1.Location = new System.Drawing.Point(10, 638);
+            this.panSize1.Name = "panSize1";
+            this.panSize1.Size = new System.Drawing.Size(832, 66);
+            this.panSize1.TabIndex = 17;
+            this.panSize1.Visible = false;
             // 
-            // sizeMyCombo15
+            // cmbSize15
             // 
-            this.sizeMyCombo15.DisplayMember = "id";
-            this.sizeMyCombo15.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.sizeMyCombo15.Enabled = false;
-            this.sizeMyCombo15.FormattingEnabled = true;
-            this.sizeMyCombo15.Location = new System.Drawing.Point(452, 5);
-            this.sizeMyCombo15.Name = "sizeMyCombo15";
-            this.sizeMyCombo15.Size = new System.Drawing.Size(40, 24);
-            this.sizeMyCombo15.TabIndex = 100;
-            this.sizeMyCombo15.ValueMember = "id";
+            this.cmbSize15.Cue = null;
+            this.cmbSize15.DisplayMember = "id";
+            this.cmbSize15.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSize15.Enabled = false;
+            this.cmbSize15.FormattingEnabled = true;
+            this.cmbSize15.Location = new System.Drawing.Point(452, 5);
+            this.cmbSize15.Name = "cmbSize15";
+            this.cmbSize15.Size = new System.Drawing.Size(40, 24);
+            this.cmbSize15.TabIndex = 100;
+            this.cmbSize15.ValueMember = "id";
             // 
-            // sizeMyCombo10
+            // cmbSize10
             // 
-            this.sizeMyCombo10.DisplayMember = "id";
-            this.sizeMyCombo10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.sizeMyCombo10.Enabled = false;
-            this.sizeMyCombo10.FormattingEnabled = true;
-            this.sizeMyCombo10.Location = new System.Drawing.Point(202, 5);
-            this.sizeMyCombo10.Name = "sizeMyCombo10";
-            this.sizeMyCombo10.Size = new System.Drawing.Size(40, 24);
-            this.sizeMyCombo10.TabIndex = 101;
-            this.sizeMyCombo10.ValueMember = "id";
+            this.cmbSize10.Cue = null;
+            this.cmbSize10.DisplayMember = "id";
+            this.cmbSize10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSize10.Enabled = false;
+            this.cmbSize10.FormattingEnabled = true;
+            this.cmbSize10.Location = new System.Drawing.Point(202, 5);
+            this.cmbSize10.Name = "cmbSize10";
+            this.cmbSize10.Size = new System.Drawing.Size(40, 24);
+            this.cmbSize10.TabIndex = 101;
+            this.cmbSize10.ValueMember = "id";
             // 
-            // sizeMyCombo11
+            // cmbSize11
             // 
-            this.sizeMyCombo11.DisplayMember = "id";
-            this.sizeMyCombo11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.sizeMyCombo11.FormattingEnabled = true;
-            this.sizeMyCombo11.Location = new System.Drawing.Point(252, 5);
-            this.sizeMyCombo11.Name = "sizeMyCombo11";
-            this.sizeMyCombo11.Size = new System.Drawing.Size(40, 24);
-            this.sizeMyCombo11.TabIndex = 77;
-            this.sizeMyCombo11.ValueMember = "id";
+            this.cmbSize11.Cue = null;
+            this.cmbSize11.DisplayMember = "id";
+            this.cmbSize11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSize11.FormattingEnabled = true;
+            this.cmbSize11.Location = new System.Drawing.Point(252, 5);
+            this.cmbSize11.Name = "cmbSize11";
+            this.cmbSize11.Size = new System.Drawing.Size(40, 24);
+            this.cmbSize11.TabIndex = 77;
+            this.cmbSize11.ValueMember = "id";
             // 
-            // unitSizeIntBox11
+            // inbUnitSize11
             // 
-            this.unitSizeIntBox11.Cue = null;
-            this.unitSizeIntBox11.Location = new System.Drawing.Point(252, 39);
-            this.unitSizeIntBox11.Name = "unitSizeIntBox11";
-            this.unitSizeIntBox11.Size = new System.Drawing.Size(40, 22);
-            this.unitSizeIntBox11.TabIndex = 84;
-            this.unitSizeIntBox11.Text = "1";
-            this.unitSizeIntBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.unitSizeIntBox11.Value = 0;
+            this.inbUnitSize11.Cue = null;
+            this.inbUnitSize11.Location = new System.Drawing.Point(252, 39);
+            this.inbUnitSize11.Name = "inbUnitSize11";
+            this.inbUnitSize11.Size = new System.Drawing.Size(40, 22);
+            this.inbUnitSize11.TabIndex = 84;
+            this.inbUnitSize11.Text = "1";
+            this.inbUnitSize11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.inbUnitSize11.Value = 0;
             // 
-            // sizeMyCombo13
+            // cmbSize13
             // 
-            this.sizeMyCombo13.DisplayMember = "id";
-            this.sizeMyCombo13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.sizeMyCombo13.Enabled = false;
-            this.sizeMyCombo13.FormattingEnabled = true;
-            this.sizeMyCombo13.Location = new System.Drawing.Point(352, 5);
-            this.sizeMyCombo13.Name = "sizeMyCombo13";
-            this.sizeMyCombo13.Size = new System.Drawing.Size(40, 24);
-            this.sizeMyCombo13.TabIndex = 98;
-            this.sizeMyCombo13.ValueMember = "id";
+            this.cmbSize13.Cue = null;
+            this.cmbSize13.DisplayMember = "id";
+            this.cmbSize13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSize13.Enabled = false;
+            this.cmbSize13.FormattingEnabled = true;
+            this.cmbSize13.Location = new System.Drawing.Point(352, 5);
+            this.cmbSize13.Name = "cmbSize13";
+            this.cmbSize13.Size = new System.Drawing.Size(40, 24);
+            this.cmbSize13.TabIndex = 98;
+            this.cmbSize13.ValueMember = "id";
             // 
-            // unitSizeIntBox15
+            // inbUnitSize15
             // 
-            this.unitSizeIntBox15.Cue = null;
-            this.unitSizeIntBox15.Location = new System.Drawing.Point(452, 39);
-            this.unitSizeIntBox15.Name = "unitSizeIntBox15";
-            this.unitSizeIntBox15.Size = new System.Drawing.Size(40, 22);
-            this.unitSizeIntBox15.TabIndex = 95;
-            this.unitSizeIntBox15.Text = "1";
-            this.unitSizeIntBox15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.unitSizeIntBox15.Value = 0;
+            this.inbUnitSize15.Cue = null;
+            this.inbUnitSize15.Location = new System.Drawing.Point(452, 39);
+            this.inbUnitSize15.Name = "inbUnitSize15";
+            this.inbUnitSize15.Size = new System.Drawing.Size(40, 22);
+            this.inbUnitSize15.TabIndex = 95;
+            this.inbUnitSize15.Text = "1";
+            this.inbUnitSize15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.inbUnitSize15.Value = 0;
             // 
-            // sizeMyCombo14
+            // cmbSize14
             // 
-            this.sizeMyCombo14.DisplayMember = "id";
-            this.sizeMyCombo14.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.sizeMyCombo14.Enabled = false;
-            this.sizeMyCombo14.FormattingEnabled = true;
-            this.sizeMyCombo14.Location = new System.Drawing.Point(402, 5);
-            this.sizeMyCombo14.Name = "sizeMyCombo14";
-            this.sizeMyCombo14.Size = new System.Drawing.Size(40, 24);
-            this.sizeMyCombo14.TabIndex = 99;
-            this.sizeMyCombo14.ValueMember = "id";
+            this.cmbSize14.Cue = null;
+            this.cmbSize14.DisplayMember = "id";
+            this.cmbSize14.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSize14.Enabled = false;
+            this.cmbSize14.FormattingEnabled = true;
+            this.cmbSize14.Location = new System.Drawing.Point(402, 5);
+            this.cmbSize14.Name = "cmbSize14";
+            this.cmbSize14.Size = new System.Drawing.Size(40, 24);
+            this.cmbSize14.TabIndex = 99;
+            this.cmbSize14.ValueMember = "id";
             // 
-            // unitSizeIntBox12
+            // inbUnitSize12
             // 
-            this.unitSizeIntBox12.Cue = null;
-            this.unitSizeIntBox12.Location = new System.Drawing.Point(302, 39);
-            this.unitSizeIntBox12.Name = "unitSizeIntBox12";
-            this.unitSizeIntBox12.Size = new System.Drawing.Size(40, 22);
-            this.unitSizeIntBox12.TabIndex = 85;
-            this.unitSizeIntBox12.Text = "1";
-            this.unitSizeIntBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.unitSizeIntBox12.Value = 0;
+            this.inbUnitSize12.Cue = null;
+            this.inbUnitSize12.Location = new System.Drawing.Point(302, 39);
+            this.inbUnitSize12.Name = "inbUnitSize12";
+            this.inbUnitSize12.Size = new System.Drawing.Size(40, 22);
+            this.inbUnitSize12.TabIndex = 85;
+            this.inbUnitSize12.Text = "1";
+            this.inbUnitSize12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.inbUnitSize12.Value = 0;
             // 
-            // unitSizeIntBox14
+            // inbUnitSize14
             // 
-            this.unitSizeIntBox14.Cue = null;
-            this.unitSizeIntBox14.Location = new System.Drawing.Point(402, 39);
-            this.unitSizeIntBox14.Name = "unitSizeIntBox14";
-            this.unitSizeIntBox14.Size = new System.Drawing.Size(40, 22);
-            this.unitSizeIntBox14.TabIndex = 94;
-            this.unitSizeIntBox14.Text = "1";
-            this.unitSizeIntBox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.unitSizeIntBox14.Value = 0;
+            this.inbUnitSize14.Cue = null;
+            this.inbUnitSize14.Location = new System.Drawing.Point(402, 39);
+            this.inbUnitSize14.Name = "inbUnitSize14";
+            this.inbUnitSize14.Size = new System.Drawing.Size(40, 22);
+            this.inbUnitSize14.TabIndex = 94;
+            this.inbUnitSize14.Text = "1";
+            this.inbUnitSize14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.inbUnitSize14.Value = 0;
             // 
-            // unitSizeIntBox13
+            // inbUnitSize13
             // 
-            this.unitSizeIntBox13.Cue = null;
-            this.unitSizeIntBox13.Location = new System.Drawing.Point(352, 39);
-            this.unitSizeIntBox13.Name = "unitSizeIntBox13";
-            this.unitSizeIntBox13.Size = new System.Drawing.Size(40, 22);
-            this.unitSizeIntBox13.TabIndex = 86;
-            this.unitSizeIntBox13.Text = "1";
-            this.unitSizeIntBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.unitSizeIntBox13.Value = 0;
+            this.inbUnitSize13.Cue = null;
+            this.inbUnitSize13.Location = new System.Drawing.Point(352, 39);
+            this.inbUnitSize13.Name = "inbUnitSize13";
+            this.inbUnitSize13.Size = new System.Drawing.Size(40, 22);
+            this.inbUnitSize13.TabIndex = 86;
+            this.inbUnitSize13.Text = "1";
+            this.inbUnitSize13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.inbUnitSize13.Value = 0;
             // 
-            // unitSizeIntBox10
+            // inbUnitSize10
             // 
-            this.unitSizeIntBox10.Cue = null;
-            this.unitSizeIntBox10.Location = new System.Drawing.Point(202, 39);
-            this.unitSizeIntBox10.Name = "unitSizeIntBox10";
-            this.unitSizeIntBox10.Size = new System.Drawing.Size(40, 22);
-            this.unitSizeIntBox10.TabIndex = 96;
-            this.unitSizeIntBox10.Text = "1";
-            this.unitSizeIntBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.unitSizeIntBox10.Value = 0;
+            this.inbUnitSize10.Cue = null;
+            this.inbUnitSize10.Location = new System.Drawing.Point(202, 39);
+            this.inbUnitSize10.Name = "inbUnitSize10";
+            this.inbUnitSize10.Size = new System.Drawing.Size(40, 22);
+            this.inbUnitSize10.TabIndex = 96;
+            this.inbUnitSize10.Text = "1";
+            this.inbUnitSize10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.inbUnitSize10.Value = 0;
             // 
-            // sizeMyCombo12
+            // cmbSize12
             // 
-            this.sizeMyCombo12.DisplayMember = "id";
-            this.sizeMyCombo12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.sizeMyCombo12.Enabled = false;
-            this.sizeMyCombo12.FormattingEnabled = true;
-            this.sizeMyCombo12.Location = new System.Drawing.Point(302, 5);
-            this.sizeMyCombo12.Name = "sizeMyCombo12";
-            this.sizeMyCombo12.Size = new System.Drawing.Size(40, 24);
-            this.sizeMyCombo12.TabIndex = 97;
-            this.sizeMyCombo12.ValueMember = "id";
+            this.cmbSize12.Cue = null;
+            this.cmbSize12.DisplayMember = "id";
+            this.cmbSize12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSize12.Enabled = false;
+            this.cmbSize12.FormattingEnabled = true;
+            this.cmbSize12.Location = new System.Drawing.Point(302, 5);
+            this.cmbSize12.Name = "cmbSize12";
+            this.cmbSize12.Size = new System.Drawing.Size(40, 24);
+            this.cmbSize12.TabIndex = 97;
+            this.cmbSize12.ValueMember = "id";
             // 
-            // productPanel2
+            // panProduct2
             // 
-            this.productPanel2.Controls.Add(this.remarkStrBox2);
-            this.productPanel2.Controls.Add(this.unitsIntegerBox2);
-            this.productPanel2.Controls.Add(this.CostCurrencyBox2);
-            this.productPanel2.Controls.Add(this.amountcurrencyBox2);
-            this.productPanel2.Controls.Add(this.SizeSetMyCombo2);
-            this.productPanel2.Controls.Add(this.ColorMyCombo2);
-            this.productPanel2.Controls.Add(this.setsIntegerBox2);
-            this.productPanel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.productPanel2.Location = new System.Drawing.Point(10, 704);
-            this.productPanel2.Name = "productPanel2";
-            this.productPanel2.Size = new System.Drawing.Size(832, 32);
-            this.productPanel2.TabIndex = 16;
-            this.productPanel2.Visible = false;
+            this.panProduct2.Controls.Add(this.txtRemark2);
+            this.panProduct2.Controls.Add(this.inbUnits2);
+            this.panProduct2.Controls.Add(this.dcbCost2);
+            this.panProduct2.Controls.Add(this.dcbAmount2);
+            this.panProduct2.Controls.Add(this.cmbSizeSet2);
+            this.panProduct2.Controls.Add(this.cmbColor2);
+            this.panProduct2.Controls.Add(this.inbSets2);
+            this.panProduct2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panProduct2.Location = new System.Drawing.Point(10, 704);
+            this.panProduct2.Name = "panProduct2";
+            this.panProduct2.Size = new System.Drawing.Size(832, 32);
+            this.panProduct2.TabIndex = 16;
+            this.panProduct2.Visible = false;
+            this.panProduct2.Enter += new System.EventHandler(this.ProductPanel_Enter);
+            this.panProduct2.Leave += new System.EventHandler(this.ProductPanel_Leave);
             // 
-            // remarkStrBox2
+            // txtRemark2
             // 
-            this.remarkStrBox2.Cue = null;
-            this.remarkStrBox2.Location = new System.Drawing.Point(583, 5);
-            this.remarkStrBox2.Name = "remarkStrBox2";
-            this.remarkStrBox2.Size = new System.Drawing.Size(249, 22);
-            this.remarkStrBox2.TabIndex = 8;
+            this.txtRemark2.Cue = null;
+            this.txtRemark2.Location = new System.Drawing.Point(583, 5);
+            this.txtRemark2.Name = "txtRemark2";
+            this.txtRemark2.Size = new System.Drawing.Size(249, 22);
+            this.txtRemark2.TabIndex = 8;
             // 
-            // unitsIntegerBox2
+            // inbUnits2
             // 
-            this.unitsIntegerBox2.Cue = null;
-            this.unitsIntegerBox2.Location = new System.Drawing.Point(382, 5);
-            this.unitsIntegerBox2.Name = "unitsIntegerBox2";
-            this.unitsIntegerBox2.ReadOnly = true;
-            this.unitsIntegerBox2.Size = new System.Drawing.Size(46, 22);
-            this.unitsIntegerBox2.TabIndex = 92;
-            this.unitsIntegerBox2.Text = "1";
-            this.unitsIntegerBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.unitsIntegerBox2.Value = 0;
+            this.inbUnits2.Cue = null;
+            this.inbUnits2.Location = new System.Drawing.Point(382, 5);
+            this.inbUnits2.Name = "inbUnits2";
+            this.inbUnits2.ReadOnly = true;
+            this.inbUnits2.Size = new System.Drawing.Size(46, 22);
+            this.inbUnits2.TabIndex = 92;
+            this.inbUnits2.Text = "1";
+            this.inbUnits2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.inbUnits2.Value = 0;
             // 
-            // CostCurrencyBox2
+            // dcbCost2
             // 
-            this.CostCurrencyBox2.Cue = null;
-            this.CostCurrencyBox2.FormatString = "C2";
-            this.CostCurrencyBox2.Location = new System.Drawing.Point(438, 5);
-            this.CostCurrencyBox2.Name = "CostCurrencyBox2";
-            this.CostCurrencyBox2.Size = new System.Drawing.Size(55, 22);
-            this.CostCurrencyBox2.TabIndex = 6;
-            this.CostCurrencyBox2.Text = "฿0.00";
-            this.CostCurrencyBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.CostCurrencyBox2.Value = new decimal(new int[] {
+            this.dcbCost2.Cue = null;
+            this.dcbCost2.FormatString = "C2";
+            this.dcbCost2.Location = new System.Drawing.Point(438, 5);
+            this.dcbCost2.Name = "dcbCost2";
+            this.dcbCost2.Size = new System.Drawing.Size(55, 22);
+            this.dcbCost2.TabIndex = 6;
+            this.dcbCost2.Text = "฿0.00";
+            this.dcbCost2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.dcbCost2.Value = new decimal(new int[] {
             0,
             0,
             0,
             0});
             // 
-            // amountcurrencyBox2
+            // dcbAmount2
             // 
-            this.amountcurrencyBox2.Cue = null;
-            this.amountcurrencyBox2.FormatString = "C2";
-            this.amountcurrencyBox2.Location = new System.Drawing.Point(503, 5);
-            this.amountcurrencyBox2.Name = "amountcurrencyBox2";
-            this.amountcurrencyBox2.ReadOnly = true;
-            this.amountcurrencyBox2.Size = new System.Drawing.Size(70, 22);
-            this.amountcurrencyBox2.TabIndex = 69;
-            this.amountcurrencyBox2.Text = "฿0.00";
-            this.amountcurrencyBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.amountcurrencyBox2.Value = new decimal(new int[] {
+            this.dcbAmount2.Cue = null;
+            this.dcbAmount2.FormatString = "C2";
+            this.dcbAmount2.Location = new System.Drawing.Point(503, 5);
+            this.dcbAmount2.Name = "dcbAmount2";
+            this.dcbAmount2.ReadOnly = true;
+            this.dcbAmount2.Size = new System.Drawing.Size(70, 22);
+            this.dcbAmount2.TabIndex = 69;
+            this.dcbAmount2.Text = "฿0.00";
+            this.dcbAmount2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.dcbAmount2.Value = new decimal(new int[] {
             0,
             0,
             0,
             0});
             // 
-            // SizeSetMyCombo2
+            // cmbSizeSet2
             // 
-            this.SizeSetMyCombo2.DisplayMember = "name";
-            this.SizeSetMyCombo2.FormattingEnabled = true;
-            this.SizeSetMyCombo2.Location = new System.Drawing.Point(202, 5);
-            this.SizeSetMyCombo2.Name = "SizeSetMyCombo2";
-            this.SizeSetMyCombo2.Size = new System.Drawing.Size(120, 24);
-            this.SizeSetMyCombo2.TabIndex = 3;
-            this.SizeSetMyCombo2.ValueMember = "id";
+            this.cmbSizeSet2.Cue = null;
+            this.cmbSizeSet2.DisplayMember = "name";
+            this.cmbSizeSet2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSizeSet2.FormattingEnabled = true;
+            this.cmbSizeSet2.Location = new System.Drawing.Point(202, 5);
+            this.cmbSizeSet2.Name = "cmbSizeSet2";
+            this.cmbSizeSet2.Size = new System.Drawing.Size(120, 24);
+            this.cmbSizeSet2.TabIndex = 3;
+            this.cmbSizeSet2.ValueMember = "id";
+            this.cmbSizeSet2.SelectedValueChanged += new System.EventHandler(this.cmbSizeSet_SelectedValueChanged);
             // 
-            // ColorMyCombo2
+            // cmbColor2
             // 
-            this.ColorMyCombo2.DisplayMember = "name";
-            this.ColorMyCombo2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ColorMyCombo2.FormattingEnabled = true;
-            this.ColorMyCombo2.Location = new System.Drawing.Point(132, 5);
-            this.ColorMyCombo2.Name = "ColorMyCombo2";
-            this.ColorMyCombo2.Size = new System.Drawing.Size(60, 24);
-            this.ColorMyCombo2.TabIndex = 5;
-            this.ColorMyCombo2.ValueMember = "id";
+            this.cmbColor2.Cue = null;
+            this.cmbColor2.DisplayMember = "name";
+            this.cmbColor2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbColor2.FormattingEnabled = true;
+            this.cmbColor2.Location = new System.Drawing.Point(132, 5);
+            this.cmbColor2.Name = "cmbColor2";
+            this.cmbColor2.Size = new System.Drawing.Size(60, 24);
+            this.cmbColor2.TabIndex = 5;
+            this.cmbColor2.ValueMember = "id";
             // 
-            // setsIntegerBox2
+            // inbSets2
             // 
-            this.setsIntegerBox2.Cue = null;
-            this.setsIntegerBox2.Location = new System.Drawing.Point(332, 5);
-            this.setsIntegerBox2.Name = "setsIntegerBox2";
-            this.setsIntegerBox2.Size = new System.Drawing.Size(40, 22);
-            this.setsIntegerBox2.TabIndex = 4;
-            this.setsIntegerBox2.Text = "1";
-            this.setsIntegerBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.setsIntegerBox2.Value = 0;
+            this.inbSets2.Cue = null;
+            this.inbSets2.Location = new System.Drawing.Point(332, 5);
+            this.inbSets2.Name = "inbSets2";
+            this.inbSets2.Size = new System.Drawing.Size(40, 22);
+            this.inbSets2.TabIndex = 4;
+            this.inbSets2.Text = "1";
+            this.inbSets2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.inbSets2.Value = 0;
             // 
-            // sizePanel2
+            // panSize2
             // 
-            this.sizePanel2.Controls.Add(this.sizeMyCombo25);
-            this.sizePanel2.Controls.Add(label23);
-            this.sizePanel2.Controls.Add(this.sizeMyCombo20);
-            this.sizePanel2.Controls.Add(this.unitSizeIntBox25);
-            this.sizePanel2.Controls.Add(this.unitSizeIntBox21);
-            this.sizePanel2.Controls.Add(this.unitSizeIntBox24);
-            this.sizePanel2.Controls.Add(this.unitSizeIntBox22);
-            this.sizePanel2.Controls.Add(this.unitSizeIntBox20);
-            this.sizePanel2.Controls.Add(this.unitSizeIntBox23);
-            this.sizePanel2.Controls.Add(this.sizeMyCombo22);
-            this.sizePanel2.Controls.Add(this.sizeMyCombo24);
-            this.sizePanel2.Controls.Add(label22);
-            this.sizePanel2.Controls.Add(this.sizeMyCombo21);
-            this.sizePanel2.Controls.Add(this.sizeMyCombo23);
-            this.sizePanel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.sizePanel2.Location = new System.Drawing.Point(10, 736);
-            this.sizePanel2.Name = "sizePanel2";
-            this.sizePanel2.Size = new System.Drawing.Size(832, 66);
-            this.sizePanel2.TabIndex = 15;
-            this.sizePanel2.Visible = false;
+            this.panSize2.Controls.Add(this.cmbSize25);
+            this.panSize2.Controls.Add(label23);
+            this.panSize2.Controls.Add(this.cmbSize20);
+            this.panSize2.Controls.Add(this.inbUnitSize25);
+            this.panSize2.Controls.Add(this.inbUnitSize21);
+            this.panSize2.Controls.Add(this.inbUnitSize24);
+            this.panSize2.Controls.Add(this.inbUnitSize22);
+            this.panSize2.Controls.Add(this.inbUnitSize20);
+            this.panSize2.Controls.Add(this.inbUnitSize23);
+            this.panSize2.Controls.Add(this.cmbSize22);
+            this.panSize2.Controls.Add(this.cmbSize24);
+            this.panSize2.Controls.Add(label22);
+            this.panSize2.Controls.Add(this.cmbSize21);
+            this.panSize2.Controls.Add(this.cmbSize23);
+            this.panSize2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panSize2.Location = new System.Drawing.Point(10, 736);
+            this.panSize2.Name = "panSize2";
+            this.panSize2.Size = new System.Drawing.Size(832, 66);
+            this.panSize2.TabIndex = 15;
+            this.panSize2.Visible = false;
             // 
-            // sizeMyCombo25
+            // cmbSize25
             // 
-            this.sizeMyCombo25.DisplayMember = "id";
-            this.sizeMyCombo25.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.sizeMyCombo25.Enabled = false;
-            this.sizeMyCombo25.FormattingEnabled = true;
-            this.sizeMyCombo25.Location = new System.Drawing.Point(452, 5);
-            this.sizeMyCombo25.Name = "sizeMyCombo25";
-            this.sizeMyCombo25.Size = new System.Drawing.Size(40, 24);
-            this.sizeMyCombo25.TabIndex = 100;
-            this.sizeMyCombo25.ValueMember = "id";
+            this.cmbSize25.Cue = null;
+            this.cmbSize25.DisplayMember = "id";
+            this.cmbSize25.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSize25.Enabled = false;
+            this.cmbSize25.FormattingEnabled = true;
+            this.cmbSize25.Location = new System.Drawing.Point(452, 5);
+            this.cmbSize25.Name = "cmbSize25";
+            this.cmbSize25.Size = new System.Drawing.Size(40, 24);
+            this.cmbSize25.TabIndex = 100;
+            this.cmbSize25.ValueMember = "id";
             // 
-            // sizeMyCombo20
+            // cmbSize20
             // 
-            this.sizeMyCombo20.DisplayMember = "id";
-            this.sizeMyCombo20.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.sizeMyCombo20.Enabled = false;
-            this.sizeMyCombo20.FormattingEnabled = true;
-            this.sizeMyCombo20.Location = new System.Drawing.Point(202, 5);
-            this.sizeMyCombo20.Name = "sizeMyCombo20";
-            this.sizeMyCombo20.Size = new System.Drawing.Size(40, 24);
-            this.sizeMyCombo20.TabIndex = 101;
-            this.sizeMyCombo20.ValueMember = "id";
+            this.cmbSize20.Cue = null;
+            this.cmbSize20.DisplayMember = "id";
+            this.cmbSize20.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSize20.Enabled = false;
+            this.cmbSize20.FormattingEnabled = true;
+            this.cmbSize20.Location = new System.Drawing.Point(202, 5);
+            this.cmbSize20.Name = "cmbSize20";
+            this.cmbSize20.Size = new System.Drawing.Size(40, 24);
+            this.cmbSize20.TabIndex = 101;
+            this.cmbSize20.ValueMember = "id";
             // 
-            // unitSizeIntBox25
+            // inbUnitSize25
             // 
-            this.unitSizeIntBox25.Cue = null;
-            this.unitSizeIntBox25.Location = new System.Drawing.Point(452, 39);
-            this.unitSizeIntBox25.Name = "unitSizeIntBox25";
-            this.unitSizeIntBox25.Size = new System.Drawing.Size(40, 22);
-            this.unitSizeIntBox25.TabIndex = 95;
-            this.unitSizeIntBox25.Text = "1";
-            this.unitSizeIntBox25.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.unitSizeIntBox25.Value = 0;
+            this.inbUnitSize25.Cue = null;
+            this.inbUnitSize25.Location = new System.Drawing.Point(452, 39);
+            this.inbUnitSize25.Name = "inbUnitSize25";
+            this.inbUnitSize25.Size = new System.Drawing.Size(40, 22);
+            this.inbUnitSize25.TabIndex = 95;
+            this.inbUnitSize25.Text = "1";
+            this.inbUnitSize25.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.inbUnitSize25.Value = 0;
             // 
-            // unitSizeIntBox21
+            // inbUnitSize21
             // 
-            this.unitSizeIntBox21.Cue = null;
-            this.unitSizeIntBox21.Location = new System.Drawing.Point(252, 39);
-            this.unitSizeIntBox21.Name = "unitSizeIntBox21";
-            this.unitSizeIntBox21.Size = new System.Drawing.Size(40, 22);
-            this.unitSizeIntBox21.TabIndex = 84;
-            this.unitSizeIntBox21.Text = "1";
-            this.unitSizeIntBox21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.unitSizeIntBox21.Value = 0;
+            this.inbUnitSize21.Cue = null;
+            this.inbUnitSize21.Location = new System.Drawing.Point(252, 39);
+            this.inbUnitSize21.Name = "inbUnitSize21";
+            this.inbUnitSize21.Size = new System.Drawing.Size(40, 22);
+            this.inbUnitSize21.TabIndex = 84;
+            this.inbUnitSize21.Text = "1";
+            this.inbUnitSize21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.inbUnitSize21.Value = 0;
             // 
-            // unitSizeIntBox24
+            // inbUnitSize24
             // 
-            this.unitSizeIntBox24.Cue = null;
-            this.unitSizeIntBox24.Location = new System.Drawing.Point(402, 39);
-            this.unitSizeIntBox24.Name = "unitSizeIntBox24";
-            this.unitSizeIntBox24.Size = new System.Drawing.Size(40, 22);
-            this.unitSizeIntBox24.TabIndex = 94;
-            this.unitSizeIntBox24.Text = "1";
-            this.unitSizeIntBox24.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.unitSizeIntBox24.Value = 0;
+            this.inbUnitSize24.Cue = null;
+            this.inbUnitSize24.Location = new System.Drawing.Point(402, 39);
+            this.inbUnitSize24.Name = "inbUnitSize24";
+            this.inbUnitSize24.Size = new System.Drawing.Size(40, 22);
+            this.inbUnitSize24.TabIndex = 94;
+            this.inbUnitSize24.Text = "1";
+            this.inbUnitSize24.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.inbUnitSize24.Value = 0;
             // 
-            // unitSizeIntBox22
+            // inbUnitSize22
             // 
-            this.unitSizeIntBox22.Cue = null;
-            this.unitSizeIntBox22.Location = new System.Drawing.Point(302, 39);
-            this.unitSizeIntBox22.Name = "unitSizeIntBox22";
-            this.unitSizeIntBox22.Size = new System.Drawing.Size(40, 22);
-            this.unitSizeIntBox22.TabIndex = 85;
-            this.unitSizeIntBox22.Text = "1";
-            this.unitSizeIntBox22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.unitSizeIntBox22.Value = 0;
+            this.inbUnitSize22.Cue = null;
+            this.inbUnitSize22.Location = new System.Drawing.Point(302, 39);
+            this.inbUnitSize22.Name = "inbUnitSize22";
+            this.inbUnitSize22.Size = new System.Drawing.Size(40, 22);
+            this.inbUnitSize22.TabIndex = 85;
+            this.inbUnitSize22.Text = "1";
+            this.inbUnitSize22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.inbUnitSize22.Value = 0;
             // 
-            // unitSizeIntBox20
+            // inbUnitSize20
             // 
-            this.unitSizeIntBox20.Cue = null;
-            this.unitSizeIntBox20.Location = new System.Drawing.Point(202, 39);
-            this.unitSizeIntBox20.Name = "unitSizeIntBox20";
-            this.unitSizeIntBox20.Size = new System.Drawing.Size(40, 22);
-            this.unitSizeIntBox20.TabIndex = 96;
-            this.unitSizeIntBox20.Text = "1";
-            this.unitSizeIntBox20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.unitSizeIntBox20.Value = 0;
+            this.inbUnitSize20.Cue = null;
+            this.inbUnitSize20.Location = new System.Drawing.Point(202, 39);
+            this.inbUnitSize20.Name = "inbUnitSize20";
+            this.inbUnitSize20.Size = new System.Drawing.Size(40, 22);
+            this.inbUnitSize20.TabIndex = 96;
+            this.inbUnitSize20.Text = "1";
+            this.inbUnitSize20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.inbUnitSize20.Value = 0;
             // 
-            // unitSizeIntBox23
+            // inbUnitSize23
             // 
-            this.unitSizeIntBox23.Cue = null;
-            this.unitSizeIntBox23.Location = new System.Drawing.Point(352, 39);
-            this.unitSizeIntBox23.Name = "unitSizeIntBox23";
-            this.unitSizeIntBox23.Size = new System.Drawing.Size(40, 22);
-            this.unitSizeIntBox23.TabIndex = 86;
-            this.unitSizeIntBox23.Text = "1";
-            this.unitSizeIntBox23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.unitSizeIntBox23.Value = 0;
+            this.inbUnitSize23.Cue = null;
+            this.inbUnitSize23.Location = new System.Drawing.Point(352, 39);
+            this.inbUnitSize23.Name = "inbUnitSize23";
+            this.inbUnitSize23.Size = new System.Drawing.Size(40, 22);
+            this.inbUnitSize23.TabIndex = 86;
+            this.inbUnitSize23.Text = "1";
+            this.inbUnitSize23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.inbUnitSize23.Value = 0;
             // 
-            // sizeMyCombo22
+            // cmbSize22
             // 
-            this.sizeMyCombo22.DisplayMember = "id";
-            this.sizeMyCombo22.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.sizeMyCombo22.Enabled = false;
-            this.sizeMyCombo22.FormattingEnabled = true;
-            this.sizeMyCombo22.Location = new System.Drawing.Point(302, 5);
-            this.sizeMyCombo22.Name = "sizeMyCombo22";
-            this.sizeMyCombo22.Size = new System.Drawing.Size(40, 24);
-            this.sizeMyCombo22.TabIndex = 97;
-            this.sizeMyCombo22.ValueMember = "id";
+            this.cmbSize22.Cue = null;
+            this.cmbSize22.DisplayMember = "id";
+            this.cmbSize22.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSize22.Enabled = false;
+            this.cmbSize22.FormattingEnabled = true;
+            this.cmbSize22.Location = new System.Drawing.Point(302, 5);
+            this.cmbSize22.Name = "cmbSize22";
+            this.cmbSize22.Size = new System.Drawing.Size(40, 24);
+            this.cmbSize22.TabIndex = 97;
+            this.cmbSize22.ValueMember = "id";
             // 
-            // sizeMyCombo24
+            // cmbSize24
             // 
-            this.sizeMyCombo24.DisplayMember = "id";
-            this.sizeMyCombo24.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.sizeMyCombo24.Enabled = false;
-            this.sizeMyCombo24.FormattingEnabled = true;
-            this.sizeMyCombo24.Location = new System.Drawing.Point(402, 5);
-            this.sizeMyCombo24.Name = "sizeMyCombo24";
-            this.sizeMyCombo24.Size = new System.Drawing.Size(40, 24);
-            this.sizeMyCombo24.TabIndex = 99;
-            this.sizeMyCombo24.ValueMember = "id";
+            this.cmbSize24.Cue = null;
+            this.cmbSize24.DisplayMember = "id";
+            this.cmbSize24.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSize24.Enabled = false;
+            this.cmbSize24.FormattingEnabled = true;
+            this.cmbSize24.Location = new System.Drawing.Point(402, 5);
+            this.cmbSize24.Name = "cmbSize24";
+            this.cmbSize24.Size = new System.Drawing.Size(40, 24);
+            this.cmbSize24.TabIndex = 99;
+            this.cmbSize24.ValueMember = "id";
             // 
-            // sizeMyCombo21
+            // cmbSize21
             // 
-            this.sizeMyCombo21.DisplayMember = "id";
-            this.sizeMyCombo21.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.sizeMyCombo21.FormattingEnabled = true;
-            this.sizeMyCombo21.Location = new System.Drawing.Point(252, 5);
-            this.sizeMyCombo21.Name = "sizeMyCombo21";
-            this.sizeMyCombo21.Size = new System.Drawing.Size(40, 24);
-            this.sizeMyCombo21.TabIndex = 77;
-            this.sizeMyCombo21.ValueMember = "id";
+            this.cmbSize21.Cue = null;
+            this.cmbSize21.DisplayMember = "id";
+            this.cmbSize21.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSize21.FormattingEnabled = true;
+            this.cmbSize21.Location = new System.Drawing.Point(252, 5);
+            this.cmbSize21.Name = "cmbSize21";
+            this.cmbSize21.Size = new System.Drawing.Size(40, 24);
+            this.cmbSize21.TabIndex = 77;
+            this.cmbSize21.ValueMember = "id";
             // 
-            // sizeMyCombo23
+            // cmbSize23
             // 
-            this.sizeMyCombo23.DisplayMember = "id";
-            this.sizeMyCombo23.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.sizeMyCombo23.Enabled = false;
-            this.sizeMyCombo23.FormattingEnabled = true;
-            this.sizeMyCombo23.Location = new System.Drawing.Point(352, 5);
-            this.sizeMyCombo23.Name = "sizeMyCombo23";
-            this.sizeMyCombo23.Size = new System.Drawing.Size(40, 24);
-            this.sizeMyCombo23.TabIndex = 98;
-            this.sizeMyCombo23.ValueMember = "id";
+            this.cmbSize23.Cue = null;
+            this.cmbSize23.DisplayMember = "id";
+            this.cmbSize23.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSize23.Enabled = false;
+            this.cmbSize23.FormattingEnabled = true;
+            this.cmbSize23.Location = new System.Drawing.Point(352, 5);
+            this.cmbSize23.Name = "cmbSize23";
+            this.cmbSize23.Size = new System.Drawing.Size(40, 24);
+            this.cmbSize23.TabIndex = 98;
+            this.cmbSize23.ValueMember = "id";
             // 
-            // productPanel3
+            // panProduct3
             // 
-            this.productPanel3.Controls.Add(this.remarkStrBox3);
-            this.productPanel3.Controls.Add(this.CostCurrencyBox3);
-            this.productPanel3.Controls.Add(this.SizeSetMyCombo3);
-            this.productPanel3.Controls.Add(this.ColorMyCombo3);
-            this.productPanel3.Controls.Add(this.setsIntegerBox3);
-            this.productPanel3.Controls.Add(this.unitsIntegerBox3);
-            this.productPanel3.Controls.Add(this.amountcurrencyBox3);
-            this.productPanel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.productPanel3.Location = new System.Drawing.Point(10, 802);
-            this.productPanel3.Name = "productPanel3";
-            this.productPanel3.Size = new System.Drawing.Size(832, 32);
-            this.productPanel3.TabIndex = 14;
-            this.productPanel3.Visible = false;
+            this.panProduct3.Controls.Add(this.txtRemark3);
+            this.panProduct3.Controls.Add(this.dcbCost3);
+            this.panProduct3.Controls.Add(this.cmbSizeSet3);
+            this.panProduct3.Controls.Add(this.cmbColor3);
+            this.panProduct3.Controls.Add(this.inbSets3);
+            this.panProduct3.Controls.Add(this.inbUnits3);
+            this.panProduct3.Controls.Add(this.dcbAmount3);
+            this.panProduct3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panProduct3.Location = new System.Drawing.Point(10, 802);
+            this.panProduct3.Name = "panProduct3";
+            this.panProduct3.Size = new System.Drawing.Size(832, 32);
+            this.panProduct3.TabIndex = 14;
+            this.panProduct3.Visible = false;
+            this.panProduct3.Enter += new System.EventHandler(this.ProductPanel_Enter);
+            this.panProduct3.Leave += new System.EventHandler(this.ProductPanel_Leave);
             // 
-            // remarkStrBox3
+            // txtRemark3
             // 
-            this.remarkStrBox3.Cue = null;
-            this.remarkStrBox3.Location = new System.Drawing.Point(583, 5);
-            this.remarkStrBox3.Name = "remarkStrBox3";
-            this.remarkStrBox3.Size = new System.Drawing.Size(249, 22);
-            this.remarkStrBox3.TabIndex = 8;
+            this.txtRemark3.Cue = null;
+            this.txtRemark3.Location = new System.Drawing.Point(583, 5);
+            this.txtRemark3.Name = "txtRemark3";
+            this.txtRemark3.Size = new System.Drawing.Size(249, 22);
+            this.txtRemark3.TabIndex = 8;
             // 
-            // CostCurrencyBox3
+            // dcbCost3
             // 
-            this.CostCurrencyBox3.Cue = null;
-            this.CostCurrencyBox3.FormatString = "C2";
-            this.CostCurrencyBox3.Location = new System.Drawing.Point(438, 5);
-            this.CostCurrencyBox3.Name = "CostCurrencyBox3";
-            this.CostCurrencyBox3.Size = new System.Drawing.Size(55, 22);
-            this.CostCurrencyBox3.TabIndex = 6;
-            this.CostCurrencyBox3.Text = "฿0.00";
-            this.CostCurrencyBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.CostCurrencyBox3.Value = new decimal(new int[] {
+            this.dcbCost3.Cue = null;
+            this.dcbCost3.FormatString = "C2";
+            this.dcbCost3.Location = new System.Drawing.Point(438, 5);
+            this.dcbCost3.Name = "dcbCost3";
+            this.dcbCost3.Size = new System.Drawing.Size(55, 22);
+            this.dcbCost3.TabIndex = 6;
+            this.dcbCost3.Text = "฿0.00";
+            this.dcbCost3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.dcbCost3.Value = new decimal(new int[] {
             0,
             0,
             0,
             0});
             // 
-            // SizeSetMyCombo3
+            // cmbSizeSet3
             // 
-            this.SizeSetMyCombo3.DisplayMember = "name";
-            this.SizeSetMyCombo3.FormattingEnabled = true;
-            this.SizeSetMyCombo3.Location = new System.Drawing.Point(202, 5);
-            this.SizeSetMyCombo3.Name = "SizeSetMyCombo3";
-            this.SizeSetMyCombo3.Size = new System.Drawing.Size(120, 24);
-            this.SizeSetMyCombo3.TabIndex = 3;
-            this.SizeSetMyCombo3.ValueMember = "id";
+            this.cmbSizeSet3.Cue = null;
+            this.cmbSizeSet3.DisplayMember = "name";
+            this.cmbSizeSet3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSizeSet3.FormattingEnabled = true;
+            this.cmbSizeSet3.Location = new System.Drawing.Point(202, 5);
+            this.cmbSizeSet3.Name = "cmbSizeSet3";
+            this.cmbSizeSet3.Size = new System.Drawing.Size(120, 24);
+            this.cmbSizeSet3.TabIndex = 3;
+            this.cmbSizeSet3.ValueMember = "id";
+            this.cmbSizeSet3.SelectedValueChanged += new System.EventHandler(this.cmbSizeSet_SelectedValueChanged);
             // 
-            // ColorMyCombo3
+            // cmbColor3
             // 
-            this.ColorMyCombo3.DisplayMember = "name";
-            this.ColorMyCombo3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ColorMyCombo3.FormattingEnabled = true;
-            this.ColorMyCombo3.Location = new System.Drawing.Point(132, 5);
-            this.ColorMyCombo3.Name = "ColorMyCombo3";
-            this.ColorMyCombo3.Size = new System.Drawing.Size(60, 24);
-            this.ColorMyCombo3.TabIndex = 5;
-            this.ColorMyCombo3.ValueMember = "id";
+            this.cmbColor3.Cue = null;
+            this.cmbColor3.DisplayMember = "name";
+            this.cmbColor3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbColor3.FormattingEnabled = true;
+            this.cmbColor3.Location = new System.Drawing.Point(132, 5);
+            this.cmbColor3.Name = "cmbColor3";
+            this.cmbColor3.Size = new System.Drawing.Size(60, 24);
+            this.cmbColor3.TabIndex = 5;
+            this.cmbColor3.ValueMember = "id";
             // 
-            // setsIntegerBox3
+            // inbSets3
             // 
-            this.setsIntegerBox3.Cue = null;
-            this.setsIntegerBox3.Location = new System.Drawing.Point(332, 5);
-            this.setsIntegerBox3.Name = "setsIntegerBox3";
-            this.setsIntegerBox3.Size = new System.Drawing.Size(40, 22);
-            this.setsIntegerBox3.TabIndex = 4;
-            this.setsIntegerBox3.Text = "1";
-            this.setsIntegerBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.setsIntegerBox3.Value = 0;
+            this.inbSets3.Cue = null;
+            this.inbSets3.Location = new System.Drawing.Point(332, 5);
+            this.inbSets3.Name = "inbSets3";
+            this.inbSets3.Size = new System.Drawing.Size(40, 22);
+            this.inbSets3.TabIndex = 4;
+            this.inbSets3.Text = "1";
+            this.inbSets3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.inbSets3.Value = 0;
             // 
-            // unitsIntegerBox3
+            // inbUnits3
             // 
-            this.unitsIntegerBox3.Cue = null;
-            this.unitsIntegerBox3.Location = new System.Drawing.Point(382, 5);
-            this.unitsIntegerBox3.Name = "unitsIntegerBox3";
-            this.unitsIntegerBox3.ReadOnly = true;
-            this.unitsIntegerBox3.Size = new System.Drawing.Size(46, 22);
-            this.unitsIntegerBox3.TabIndex = 92;
-            this.unitsIntegerBox3.Text = "1";
-            this.unitsIntegerBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.unitsIntegerBox3.Value = 0;
+            this.inbUnits3.Cue = null;
+            this.inbUnits3.Location = new System.Drawing.Point(382, 5);
+            this.inbUnits3.Name = "inbUnits3";
+            this.inbUnits3.ReadOnly = true;
+            this.inbUnits3.Size = new System.Drawing.Size(46, 22);
+            this.inbUnits3.TabIndex = 92;
+            this.inbUnits3.Text = "1";
+            this.inbUnits3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.inbUnits3.Value = 0;
             // 
-            // amountcurrencyBox3
+            // dcbAmount3
             // 
-            this.amountcurrencyBox3.Cue = null;
-            this.amountcurrencyBox3.FormatString = "C2";
-            this.amountcurrencyBox3.Location = new System.Drawing.Point(503, 5);
-            this.amountcurrencyBox3.Name = "amountcurrencyBox3";
-            this.amountcurrencyBox3.ReadOnly = true;
-            this.amountcurrencyBox3.Size = new System.Drawing.Size(70, 22);
-            this.amountcurrencyBox3.TabIndex = 69;
-            this.amountcurrencyBox3.Text = "฿0.00";
-            this.amountcurrencyBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.amountcurrencyBox3.Value = new decimal(new int[] {
+            this.dcbAmount3.Cue = null;
+            this.dcbAmount3.FormatString = "C2";
+            this.dcbAmount3.Location = new System.Drawing.Point(503, 5);
+            this.dcbAmount3.Name = "dcbAmount3";
+            this.dcbAmount3.ReadOnly = true;
+            this.dcbAmount3.Size = new System.Drawing.Size(70, 22);
+            this.dcbAmount3.TabIndex = 69;
+            this.dcbAmount3.Text = "฿0.00";
+            this.dcbAmount3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.dcbAmount3.Value = new decimal(new int[] {
             0,
             0,
             0,
             0});
             // 
-            // sizePanel3
+            // panSize3
             // 
-            this.sizePanel3.Controls.Add(this.unitSizeIntBox35);
-            this.sizePanel3.Controls.Add(this.sizeMyCombo35);
-            this.sizePanel3.Controls.Add(this.unitSizeIntBox31);
-            this.sizePanel3.Controls.Add(this.unitSizeIntBox34);
-            this.sizePanel3.Controls.Add(this.sizeMyCombo30);
-            this.sizePanel3.Controls.Add(this.unitSizeIntBox30);
-            this.sizePanel3.Controls.Add(this.unitSizeIntBox32);
-            this.sizePanel3.Controls.Add(label26);
-            this.sizePanel3.Controls.Add(this.sizeMyCombo32);
-            this.sizePanel3.Controls.Add(this.unitSizeIntBox33);
-            this.sizePanel3.Controls.Add(label25);
-            this.sizePanel3.Controls.Add(this.sizeMyCombo34);
-            this.sizePanel3.Controls.Add(this.sizeMyCombo33);
-            this.sizePanel3.Controls.Add(this.sizeMyCombo31);
-            this.sizePanel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.sizePanel3.Location = new System.Drawing.Point(10, 834);
-            this.sizePanel3.Name = "sizePanel3";
-            this.sizePanel3.Size = new System.Drawing.Size(832, 66);
-            this.sizePanel3.TabIndex = 13;
-            this.sizePanel3.Visible = false;
+            this.panSize3.Controls.Add(this.inbUnitSize35);
+            this.panSize3.Controls.Add(this.cmbSize35);
+            this.panSize3.Controls.Add(this.inbUnitSize31);
+            this.panSize3.Controls.Add(this.inbUnitSize34);
+            this.panSize3.Controls.Add(this.cmbSize30);
+            this.panSize3.Controls.Add(this.inbUnitSize30);
+            this.panSize3.Controls.Add(this.inbUnitSize32);
+            this.panSize3.Controls.Add(label26);
+            this.panSize3.Controls.Add(this.cmbSize32);
+            this.panSize3.Controls.Add(this.inbUnitSize33);
+            this.panSize3.Controls.Add(label25);
+            this.panSize3.Controls.Add(this.cmbSize34);
+            this.panSize3.Controls.Add(this.cmbSize33);
+            this.panSize3.Controls.Add(this.cmbSize31);
+            this.panSize3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panSize3.Location = new System.Drawing.Point(10, 834);
+            this.panSize3.Name = "panSize3";
+            this.panSize3.Size = new System.Drawing.Size(832, 66);
+            this.panSize3.TabIndex = 13;
+            this.panSize3.Visible = false;
             // 
-            // unitSizeIntBox35
+            // inbUnitSize35
             // 
-            this.unitSizeIntBox35.Cue = null;
-            this.unitSizeIntBox35.Location = new System.Drawing.Point(452, 39);
-            this.unitSizeIntBox35.Name = "unitSizeIntBox35";
-            this.unitSizeIntBox35.Size = new System.Drawing.Size(40, 22);
-            this.unitSizeIntBox35.TabIndex = 95;
-            this.unitSizeIntBox35.Text = "1";
-            this.unitSizeIntBox35.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.unitSizeIntBox35.Value = 0;
+            this.inbUnitSize35.Cue = null;
+            this.inbUnitSize35.Location = new System.Drawing.Point(452, 39);
+            this.inbUnitSize35.Name = "inbUnitSize35";
+            this.inbUnitSize35.Size = new System.Drawing.Size(40, 22);
+            this.inbUnitSize35.TabIndex = 95;
+            this.inbUnitSize35.Text = "1";
+            this.inbUnitSize35.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.inbUnitSize35.Value = 0;
             // 
-            // sizeMyCombo35
+            // cmbSize35
             // 
-            this.sizeMyCombo35.DisplayMember = "id";
-            this.sizeMyCombo35.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.sizeMyCombo35.Enabled = false;
-            this.sizeMyCombo35.FormattingEnabled = true;
-            this.sizeMyCombo35.Location = new System.Drawing.Point(452, 5);
-            this.sizeMyCombo35.Name = "sizeMyCombo35";
-            this.sizeMyCombo35.Size = new System.Drawing.Size(40, 24);
-            this.sizeMyCombo35.TabIndex = 100;
-            this.sizeMyCombo35.ValueMember = "id";
+            this.cmbSize35.Cue = null;
+            this.cmbSize35.DisplayMember = "id";
+            this.cmbSize35.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSize35.Enabled = false;
+            this.cmbSize35.FormattingEnabled = true;
+            this.cmbSize35.Location = new System.Drawing.Point(452, 5);
+            this.cmbSize35.Name = "cmbSize35";
+            this.cmbSize35.Size = new System.Drawing.Size(40, 24);
+            this.cmbSize35.TabIndex = 100;
+            this.cmbSize35.ValueMember = "id";
             // 
-            // unitSizeIntBox31
+            // inbUnitSize31
             // 
-            this.unitSizeIntBox31.Cue = null;
-            this.unitSizeIntBox31.Location = new System.Drawing.Point(252, 39);
-            this.unitSizeIntBox31.Name = "unitSizeIntBox31";
-            this.unitSizeIntBox31.Size = new System.Drawing.Size(40, 22);
-            this.unitSizeIntBox31.TabIndex = 84;
-            this.unitSizeIntBox31.Text = "1";
-            this.unitSizeIntBox31.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.unitSizeIntBox31.Value = 0;
+            this.inbUnitSize31.Cue = null;
+            this.inbUnitSize31.Location = new System.Drawing.Point(252, 39);
+            this.inbUnitSize31.Name = "inbUnitSize31";
+            this.inbUnitSize31.Size = new System.Drawing.Size(40, 22);
+            this.inbUnitSize31.TabIndex = 84;
+            this.inbUnitSize31.Text = "1";
+            this.inbUnitSize31.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.inbUnitSize31.Value = 0;
             // 
-            // unitSizeIntBox34
+            // inbUnitSize34
             // 
-            this.unitSizeIntBox34.Cue = null;
-            this.unitSizeIntBox34.Location = new System.Drawing.Point(402, 39);
-            this.unitSizeIntBox34.Name = "unitSizeIntBox34";
-            this.unitSizeIntBox34.Size = new System.Drawing.Size(40, 22);
-            this.unitSizeIntBox34.TabIndex = 94;
-            this.unitSizeIntBox34.Text = "1";
-            this.unitSizeIntBox34.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.unitSizeIntBox34.Value = 0;
+            this.inbUnitSize34.Cue = null;
+            this.inbUnitSize34.Location = new System.Drawing.Point(402, 39);
+            this.inbUnitSize34.Name = "inbUnitSize34";
+            this.inbUnitSize34.Size = new System.Drawing.Size(40, 22);
+            this.inbUnitSize34.TabIndex = 94;
+            this.inbUnitSize34.Text = "1";
+            this.inbUnitSize34.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.inbUnitSize34.Value = 0;
             // 
-            // sizeMyCombo30
+            // cmbSize30
             // 
-            this.sizeMyCombo30.DisplayMember = "id";
-            this.sizeMyCombo30.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.sizeMyCombo30.Enabled = false;
-            this.sizeMyCombo30.FormattingEnabled = true;
-            this.sizeMyCombo30.Location = new System.Drawing.Point(202, 5);
-            this.sizeMyCombo30.Name = "sizeMyCombo30";
-            this.sizeMyCombo30.Size = new System.Drawing.Size(40, 24);
-            this.sizeMyCombo30.TabIndex = 101;
-            this.sizeMyCombo30.ValueMember = "id";
+            this.cmbSize30.Cue = null;
+            this.cmbSize30.DisplayMember = "id";
+            this.cmbSize30.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSize30.Enabled = false;
+            this.cmbSize30.FormattingEnabled = true;
+            this.cmbSize30.Location = new System.Drawing.Point(202, 5);
+            this.cmbSize30.Name = "cmbSize30";
+            this.cmbSize30.Size = new System.Drawing.Size(40, 24);
+            this.cmbSize30.TabIndex = 101;
+            this.cmbSize30.ValueMember = "id";
             // 
-            // unitSizeIntBox30
+            // inbUnitSize30
             // 
-            this.unitSizeIntBox30.Cue = null;
-            this.unitSizeIntBox30.Location = new System.Drawing.Point(202, 39);
-            this.unitSizeIntBox30.Name = "unitSizeIntBox30";
-            this.unitSizeIntBox30.Size = new System.Drawing.Size(40, 22);
-            this.unitSizeIntBox30.TabIndex = 96;
-            this.unitSizeIntBox30.Text = "1";
-            this.unitSizeIntBox30.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.unitSizeIntBox30.Value = 0;
+            this.inbUnitSize30.Cue = null;
+            this.inbUnitSize30.Location = new System.Drawing.Point(202, 39);
+            this.inbUnitSize30.Name = "inbUnitSize30";
+            this.inbUnitSize30.Size = new System.Drawing.Size(40, 22);
+            this.inbUnitSize30.TabIndex = 96;
+            this.inbUnitSize30.Text = "1";
+            this.inbUnitSize30.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.inbUnitSize30.Value = 0;
             // 
-            // unitSizeIntBox32
+            // inbUnitSize32
             // 
-            this.unitSizeIntBox32.Cue = null;
-            this.unitSizeIntBox32.Location = new System.Drawing.Point(302, 39);
-            this.unitSizeIntBox32.Name = "unitSizeIntBox32";
-            this.unitSizeIntBox32.Size = new System.Drawing.Size(40, 22);
-            this.unitSizeIntBox32.TabIndex = 85;
-            this.unitSizeIntBox32.Text = "1";
-            this.unitSizeIntBox32.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.unitSizeIntBox32.Value = 0;
+            this.inbUnitSize32.Cue = null;
+            this.inbUnitSize32.Location = new System.Drawing.Point(302, 39);
+            this.inbUnitSize32.Name = "inbUnitSize32";
+            this.inbUnitSize32.Size = new System.Drawing.Size(40, 22);
+            this.inbUnitSize32.TabIndex = 85;
+            this.inbUnitSize32.Text = "1";
+            this.inbUnitSize32.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.inbUnitSize32.Value = 0;
             // 
-            // sizeMyCombo32
+            // cmbSize32
             // 
-            this.sizeMyCombo32.DisplayMember = "id";
-            this.sizeMyCombo32.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.sizeMyCombo32.Enabled = false;
-            this.sizeMyCombo32.FormattingEnabled = true;
-            this.sizeMyCombo32.Location = new System.Drawing.Point(302, 5);
-            this.sizeMyCombo32.Name = "sizeMyCombo32";
-            this.sizeMyCombo32.Size = new System.Drawing.Size(40, 24);
-            this.sizeMyCombo32.TabIndex = 97;
-            this.sizeMyCombo32.ValueMember = "id";
+            this.cmbSize32.Cue = null;
+            this.cmbSize32.DisplayMember = "id";
+            this.cmbSize32.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSize32.Enabled = false;
+            this.cmbSize32.FormattingEnabled = true;
+            this.cmbSize32.Location = new System.Drawing.Point(302, 5);
+            this.cmbSize32.Name = "cmbSize32";
+            this.cmbSize32.Size = new System.Drawing.Size(40, 24);
+            this.cmbSize32.TabIndex = 97;
+            this.cmbSize32.ValueMember = "id";
             // 
-            // unitSizeIntBox33
+            // inbUnitSize33
             // 
-            this.unitSizeIntBox33.Cue = null;
-            this.unitSizeIntBox33.Location = new System.Drawing.Point(352, 39);
-            this.unitSizeIntBox33.Name = "unitSizeIntBox33";
-            this.unitSizeIntBox33.Size = new System.Drawing.Size(40, 22);
-            this.unitSizeIntBox33.TabIndex = 86;
-            this.unitSizeIntBox33.Text = "1";
-            this.unitSizeIntBox33.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.unitSizeIntBox33.Value = 0;
+            this.inbUnitSize33.Cue = null;
+            this.inbUnitSize33.Location = new System.Drawing.Point(352, 39);
+            this.inbUnitSize33.Name = "inbUnitSize33";
+            this.inbUnitSize33.Size = new System.Drawing.Size(40, 22);
+            this.inbUnitSize33.TabIndex = 86;
+            this.inbUnitSize33.Text = "1";
+            this.inbUnitSize33.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.inbUnitSize33.Value = 0;
             // 
-            // sizeMyCombo34
+            // cmbSize34
             // 
-            this.sizeMyCombo34.DisplayMember = "id";
-            this.sizeMyCombo34.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.sizeMyCombo34.Enabled = false;
-            this.sizeMyCombo34.FormattingEnabled = true;
-            this.sizeMyCombo34.Location = new System.Drawing.Point(402, 5);
-            this.sizeMyCombo34.Name = "sizeMyCombo34";
-            this.sizeMyCombo34.Size = new System.Drawing.Size(40, 24);
-            this.sizeMyCombo34.TabIndex = 99;
-            this.sizeMyCombo34.ValueMember = "id";
+            this.cmbSize34.Cue = null;
+            this.cmbSize34.DisplayMember = "id";
+            this.cmbSize34.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSize34.Enabled = false;
+            this.cmbSize34.FormattingEnabled = true;
+            this.cmbSize34.Location = new System.Drawing.Point(402, 5);
+            this.cmbSize34.Name = "cmbSize34";
+            this.cmbSize34.Size = new System.Drawing.Size(40, 24);
+            this.cmbSize34.TabIndex = 99;
+            this.cmbSize34.ValueMember = "id";
             // 
-            // sizeMyCombo33
+            // cmbSize33
             // 
-            this.sizeMyCombo33.DisplayMember = "id";
-            this.sizeMyCombo33.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.sizeMyCombo33.Enabled = false;
-            this.sizeMyCombo33.FormattingEnabled = true;
-            this.sizeMyCombo33.Location = new System.Drawing.Point(352, 5);
-            this.sizeMyCombo33.Name = "sizeMyCombo33";
-            this.sizeMyCombo33.Size = new System.Drawing.Size(40, 24);
-            this.sizeMyCombo33.TabIndex = 98;
-            this.sizeMyCombo33.ValueMember = "id";
+            this.cmbSize33.Cue = null;
+            this.cmbSize33.DisplayMember = "id";
+            this.cmbSize33.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSize33.Enabled = false;
+            this.cmbSize33.FormattingEnabled = true;
+            this.cmbSize33.Location = new System.Drawing.Point(352, 5);
+            this.cmbSize33.Name = "cmbSize33";
+            this.cmbSize33.Size = new System.Drawing.Size(40, 24);
+            this.cmbSize33.TabIndex = 98;
+            this.cmbSize33.ValueMember = "id";
             // 
-            // sizeMyCombo31
+            // cmbSize31
             // 
-            this.sizeMyCombo31.DisplayMember = "id";
-            this.sizeMyCombo31.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.sizeMyCombo31.FormattingEnabled = true;
-            this.sizeMyCombo31.Location = new System.Drawing.Point(252, 5);
-            this.sizeMyCombo31.Name = "sizeMyCombo31";
-            this.sizeMyCombo31.Size = new System.Drawing.Size(40, 24);
-            this.sizeMyCombo31.TabIndex = 77;
-            this.sizeMyCombo31.ValueMember = "id";
+            this.cmbSize31.Cue = null;
+            this.cmbSize31.DisplayMember = "id";
+            this.cmbSize31.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSize31.FormattingEnabled = true;
+            this.cmbSize31.Location = new System.Drawing.Point(252, 5);
+            this.cmbSize31.Name = "cmbSize31";
+            this.cmbSize31.Size = new System.Drawing.Size(40, 24);
+            this.cmbSize31.TabIndex = 77;
+            this.cmbSize31.ValueMember = "id";
             // 
-            // footItemPanel
+            // panFootItem
             // 
-            this.footItemPanel.Controls.Add(this.currencyBox3);
-            this.footItemPanel.Controls.Add(label27);
-            this.footItemPanel.Controls.Add(this.btnOKItem);
-            this.footItemPanel.Controls.Add(this.btnCancelItem);
-            this.footItemPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.footItemPanel.Location = new System.Drawing.Point(10, 900);
-            this.footItemPanel.Name = "footItemPanel";
-            this.footItemPanel.Size = new System.Drawing.Size(832, 52);
-            this.footItemPanel.TabIndex = 12;
-            this.footItemPanel.Visible = false;
+            this.panFootItem.Controls.Add(this.currencyBox3);
+            this.panFootItem.Controls.Add(label27);
+            this.panFootItem.Controls.Add(this.btnOKItem);
+            this.panFootItem.Controls.Add(this.btnCancelItem);
+            this.panFootItem.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panFootItem.Location = new System.Drawing.Point(10, 900);
+            this.panFootItem.Name = "panFootItem";
+            this.panFootItem.Size = new System.Drawing.Size(832, 52);
+            this.panFootItem.TabIndex = 12;
+            this.panFootItem.Visible = false;
             // 
             // currencyBox3
             // 
@@ -2155,6 +2218,7 @@ namespace PointOfSale
             // 
             // cmbCheckEmpEdit
             // 
+            this.cmbCheckEmpEdit.Cue = null;
             this.cmbCheckEmpEdit.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.bsBuyBill, "checkEmpID", true));
             this.cmbCheckEmpEdit.DisplayMember = "name";
             this.cmbCheckEmpEdit.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -2243,8 +2307,10 @@ namespace PointOfSale
             // 
             // cmbCheckEmpView
             // 
+            this.cmbCheckEmpView.Cue = null;
             this.cmbCheckEmpView.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsBuyBill, "checkEmpName", true));
             this.cmbCheckEmpView.DisplayMember = "id";
+            this.cmbCheckEmpView.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbCheckEmpView.Enabled = false;
             this.cmbCheckEmpView.FormattingEnabled = true;
             this.cmbCheckEmpView.Location = new System.Drawing.Point(583, 39);
@@ -2255,6 +2321,7 @@ namespace PointOfSale
             // 
             // cmbModelInfoEmpEdit
             // 
+            this.cmbModelInfoEmpEdit.Cue = null;
             this.cmbModelInfoEmpEdit.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.bsBuyBill, "modelInfoEmpID", true));
             this.cmbModelInfoEmpEdit.DisplayMember = "name";
             this.cmbModelInfoEmpEdit.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -2268,7 +2335,9 @@ namespace PointOfSale
             // 
             // cmbModelInfoEmpView
             // 
+            this.cmbModelInfoEmpView.Cue = null;
             this.cmbModelInfoEmpView.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsBuyBill, "modelInfoEmpName", true));
+            this.cmbModelInfoEmpView.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbModelInfoEmpView.Enabled = false;
             this.cmbModelInfoEmpView.FormattingEnabled = true;
             this.cmbModelInfoEmpView.Location = new System.Drawing.Point(767, 37);
@@ -2278,6 +2347,7 @@ namespace PointOfSale
             // 
             // cmbBarcodeEmp2Edit
             // 
+            this.cmbBarcodeEmp2Edit.Cue = null;
             this.cmbBarcodeEmp2Edit.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.bsBuyBill, "barcodeEmpID2", true));
             this.cmbBarcodeEmp2Edit.DisplayMember = "name";
             this.cmbBarcodeEmp2Edit.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -2291,7 +2361,9 @@ namespace PointOfSale
             // 
             // cmbBarcodeEmp2View
             // 
+            this.cmbBarcodeEmp2View.Cue = null;
             this.cmbBarcodeEmp2View.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsBuyBill, "barcodeEmpName2", true));
+            this.cmbBarcodeEmp2View.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBarcodeEmp2View.Enabled = false;
             this.cmbBarcodeEmp2View.FormattingEnabled = true;
             this.cmbBarcodeEmp2View.Location = new System.Drawing.Point(674, 69);
@@ -2301,6 +2373,7 @@ namespace PointOfSale
             // 
             // cmbBarcodeEmpEdit
             // 
+            this.cmbBarcodeEmpEdit.Cue = null;
             this.cmbBarcodeEmpEdit.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.bsBuyBill, "barcodeEmpID", true));
             this.cmbBarcodeEmpEdit.DisplayMember = "name";
             this.cmbBarcodeEmpEdit.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -2314,7 +2387,9 @@ namespace PointOfSale
             // 
             // cmbBarcodeEmpView
             // 
+            this.cmbBarcodeEmpView.Cue = null;
             this.cmbBarcodeEmpView.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsBuyBill, "barcodeEmpName", true));
+            this.cmbBarcodeEmpView.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBarcodeEmpView.Enabled = false;
             this.cmbBarcodeEmpView.FormattingEnabled = true;
             this.cmbBarcodeEmpView.Location = new System.Drawing.Point(674, 37);
@@ -2461,6 +2536,7 @@ namespace PointOfSale
             // 
             // cmbKeyInEmp
             // 
+            this.cmbKeyInEmp.Cue = null;
             this.cmbKeyInEmp.DisplayMember = "name";
             this.cmbKeyInEmp.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbKeyInEmp.FormattingEnabled = true;
@@ -2606,6 +2682,7 @@ namespace PointOfSale
             // cmbSupplier
             // 
             this.cmbSupplier.CausesValidation = false;
+            this.cmbSupplier.Cue = null;
             this.cmbSupplier.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsBuyBill, "supplierID", true));
             this.cmbSupplier.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.bsBuyBill, "supplierID", true));
             this.cmbSupplier.DisplayMember = "name";
@@ -2621,6 +2698,7 @@ namespace PointOfSale
             // 
             // cmbBranch
             // 
+            this.cmbBranch.Cue = null;
             this.cmbBranch.DisplayMember = "name";
             this.cmbBranch.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBranch.Enabled = false;
@@ -2664,24 +2742,24 @@ namespace PointOfSale
             this.modelPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bsBrandView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsModel)).EndInit();
-            this.productPanel0.ResumeLayout(false);
-            this.productPanel0.PerformLayout();
-            this.sizePanel0.ResumeLayout(false);
-            this.sizePanel0.PerformLayout();
-            this.productPanel1.ResumeLayout(false);
-            this.productPanel1.PerformLayout();
-            this.sizePanel1.ResumeLayout(false);
-            this.sizePanel1.PerformLayout();
-            this.productPanel2.ResumeLayout(false);
-            this.productPanel2.PerformLayout();
-            this.sizePanel2.ResumeLayout(false);
-            this.sizePanel2.PerformLayout();
-            this.productPanel3.ResumeLayout(false);
-            this.productPanel3.PerformLayout();
-            this.sizePanel3.ResumeLayout(false);
-            this.sizePanel3.PerformLayout();
-            this.footItemPanel.ResumeLayout(false);
-            this.footItemPanel.PerformLayout();
+            this.panProduct0.ResumeLayout(false);
+            this.panProduct0.PerformLayout();
+            this.panSize0.ResumeLayout(false);
+            this.panSize0.PerformLayout();
+            this.panProduct1.ResumeLayout(false);
+            this.panProduct1.PerformLayout();
+            this.panSize1.ResumeLayout(false);
+            this.panSize1.PerformLayout();
+            this.panProduct2.ResumeLayout(false);
+            this.panProduct2.PerformLayout();
+            this.panSize2.ResumeLayout(false);
+            this.panSize2.PerformLayout();
+            this.panProduct3.ResumeLayout(false);
+            this.panProduct3.PerformLayout();
+            this.panSize3.ResumeLayout(false);
+            this.panSize3.PerformLayout();
+            this.panFootItem.ResumeLayout(false);
+            this.panFootItem.PerformLayout();
             this.BottomPanel.ResumeLayout(false);
             this.BottomPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bsBuyBill)).EndInit();
@@ -2706,116 +2784,116 @@ namespace PointOfSale
         private System.Windows.Forms.Button btnBillCancel;
         private System.Windows.Forms.Button btnBillOK;
         private MyControls.MyPanel modelPanel;
-        private MyControls.IntegerBox unitsModelIntegerBox0;
-        private MyControls.MyCombo SizeSetModelMyCombo;
-        private MyControls.IntegerBox setsModelIntegerBox;
-        private MyControls.MyCombo cmbBrand;
-        private MyControls.CurrencyBox costModelCurrencyBox;
-        private MyControls.CurrencyBox currencyBox1;
-        private MyControls.MyCombo cmbModel;
-        private MyControls.MyPanel productPanel0;
-        private MyControls.StrBox remarkStrBox0;
-        private MyControls.MyCombo ColorMyCombo0;
-        private MyControls.MyCombo SizeSetMyCombo0;
-        private MyControls.CurrencyBox CostCurrencyBox0;
-        private MyControls.IntegerBox setsIntegerBox0;
-        private MyControls.IntegerBox unitsIntegerBox0;
-        private MyControls.CurrencyBox amountcurrencyBox0;
-        private MyControls.MyPanel sizePanel0;
-        private MyControls.MyCombo sizeMyCombo05;
-        private MyControls.MyCombo sizeMyCombo00;
-        private MyControls.IntegerBox unitSizeIntBox05;
-        private MyControls.IntegerBox unitSizeIntBox02;
-        private MyControls.IntegerBox unitSizeIntBox04;
-        private MyControls.IntegerBox unitSizeIntBox03;
-        private MyControls.IntegerBox unitSizeIntBox00;
-        private MyControls.MyCombo sizeMyCombo04;
-        private MyControls.IntegerBox unitSizeIntBox01;
-        private MyControls.MyCombo sizeMyCombo01;
-        private MyControls.MyCombo sizeMyCombo03;
-        private MyControls.MyCombo sizeMyCombo02;
-        private MyControls.MyPanel productPanel1;
-        private MyControls.StrBox remarkStrBox1;
-        private MyControls.MyCombo SizeSetMyCombo1;
-        private MyControls.CurrencyBox CostCurrencyBox1;
-        private MyControls.IntegerBox setsIntegerBox1;
-        private MyControls.MyCombo ColorMyCombo1;
-        private MyControls.CurrencyBox amountcurrencyBox1;
-        private MyControls.IntegerBox unitsIntegerBox1;
-        private MyControls.MyPanel sizePanel1;
-        private MyControls.MyCombo sizeMyCombo15;
-        private MyControls.MyCombo sizeMyCombo10;
-        private MyControls.MyCombo sizeMyCombo11;
-        private MyControls.IntegerBox unitSizeIntBox11;
-        private MyControls.MyCombo sizeMyCombo13;
-        private MyControls.IntegerBox unitSizeIntBox15;
-        private MyControls.MyCombo sizeMyCombo14;
-        private MyControls.IntegerBox unitSizeIntBox12;
-        private MyControls.IntegerBox unitSizeIntBox14;
-        private MyControls.IntegerBox unitSizeIntBox13;
-        private MyControls.IntegerBox unitSizeIntBox10;
-        private MyControls.MyCombo sizeMyCombo12;
-        private MyControls.MyPanel productPanel2;
-        private MyControls.StrBox remarkStrBox2;
-        private MyControls.IntegerBox unitsIntegerBox2;
-        private MyControls.CurrencyBox CostCurrencyBox2;
-        private MyControls.CurrencyBox amountcurrencyBox2;
-        private MyControls.MyCombo SizeSetMyCombo2;
-        private MyControls.MyCombo ColorMyCombo2;
-        private MyControls.IntegerBox setsIntegerBox2;
-        private MyControls.MyPanel sizePanel2;
-        private MyControls.MyCombo sizeMyCombo25;
-        private MyControls.MyCombo sizeMyCombo20;
-        private MyControls.IntegerBox unitSizeIntBox25;
-        private MyControls.IntegerBox unitSizeIntBox21;
-        private MyControls.IntegerBox unitSizeIntBox24;
-        private MyControls.IntegerBox unitSizeIntBox22;
-        private MyControls.IntegerBox unitSizeIntBox20;
-        private MyControls.IntegerBox unitSizeIntBox23;
-        private MyControls.MyCombo sizeMyCombo22;
-        private MyControls.MyCombo sizeMyCombo24;
-        private MyControls.MyCombo sizeMyCombo21;
-        private MyControls.MyCombo sizeMyCombo23;
-        private MyControls.MyPanel productPanel3;
-        private MyControls.StrBox remarkStrBox3;
-        private MyControls.CurrencyBox CostCurrencyBox3;
-        private MyControls.MyCombo SizeSetMyCombo3;
-        private MyControls.MyCombo ColorMyCombo3;
-        private MyControls.IntegerBox setsIntegerBox3;
-        private MyControls.IntegerBox unitsIntegerBox3;
-        private MyControls.CurrencyBox amountcurrencyBox3;
-        private MyControls.MyPanel sizePanel3;
-        private MyControls.IntegerBox unitSizeIntBox35;
-        private MyControls.MyCombo sizeMyCombo35;
-        private MyControls.IntegerBox unitSizeIntBox31;
-        private MyControls.IntegerBox unitSizeIntBox34;
-        private MyControls.MyCombo sizeMyCombo30;
-        private MyControls.IntegerBox unitSizeIntBox30;
-        private MyControls.IntegerBox unitSizeIntBox32;
-        private MyControls.MyCombo sizeMyCombo32;
-        private MyControls.IntegerBox unitSizeIntBox33;
-        private MyControls.MyCombo sizeMyCombo34;
-        private MyControls.MyCombo sizeMyCombo33;
-        private MyControls.MyCombo sizeMyCombo31;
-        private MyControls.MyPanel footItemPanel;
+        private MyControls.IntegerBox inbModelUnits;
+        private MyControls.ComboList cmbModelSizeSet;
+        private MyControls.IntegerBox inbModelSets;
+        private MyControls.ComboList cmbBrand;
+        private MyControls.CurrencyBox dcbModelCost;
+        private MyControls.CurrencyBox dcbModelPrice;
+        private MyControls.ComboText cmbModel;
+        private MyControls.MyPanel panProduct0;
+        private MyControls.StrBox txtRemark0;
+        private MyControls.ComboList cmbColor0;
+        private MyControls.ComboList cmbSizeSet0;
+        private MyControls.CurrencyBox dcbCost0;
+        private MyControls.IntegerBox inbSets0;
+        private MyControls.IntegerBox inbUnits0;
+        private MyControls.CurrencyBox dcbAmount0;
+        private MyControls.MyPanel panSize0;
+        private MyControls.ComboList cmbSize05;
+        private MyControls.ComboList cmbSize00;
+        private MyControls.IntegerBox inbUnitSize05;
+        private MyControls.IntegerBox inbUnitSize02;
+        private MyControls.IntegerBox inbUnitSize04;
+        private MyControls.IntegerBox inbUnitSize03;
+        private MyControls.IntegerBox inbUnitSize00;
+        private MyControls.ComboList cmbSize04;
+        private MyControls.IntegerBox inbUnitSize01;
+        private MyControls.ComboList cmbSize01;
+        private MyControls.ComboList cmbSize03;
+        private MyControls.ComboList cmbSize02;
+        private MyControls.MyPanel panProduct1;
+        private MyControls.StrBox txtRemark1;
+        private MyControls.ComboList cmbSizeSet1;
+        private MyControls.CurrencyBox dcbCost1;
+        private MyControls.IntegerBox inbSets1;
+        private MyControls.ComboList cmbColor1;
+        private MyControls.CurrencyBox dcbAmount1;
+        private MyControls.IntegerBox inbUnits1;
+        private MyControls.MyPanel panSize1;
+        private MyControls.ComboList cmbSize15;
+        private MyControls.ComboList cmbSize10;
+        private MyControls.ComboList cmbSize11;
+        private MyControls.IntegerBox inbUnitSize11;
+        private MyControls.ComboList cmbSize13;
+        private MyControls.IntegerBox inbUnitSize15;
+        private MyControls.ComboList cmbSize14;
+        private MyControls.IntegerBox inbUnitSize12;
+        private MyControls.IntegerBox inbUnitSize14;
+        private MyControls.IntegerBox inbUnitSize13;
+        private MyControls.IntegerBox inbUnitSize10;
+        private MyControls.ComboList cmbSize12;
+        private MyControls.MyPanel panProduct2;
+        private MyControls.StrBox txtRemark2;
+        private MyControls.IntegerBox inbUnits2;
+        private MyControls.CurrencyBox dcbCost2;
+        private MyControls.CurrencyBox dcbAmount2;
+        private MyControls.ComboList cmbSizeSet2;
+        private MyControls.ComboList cmbColor2;
+        private MyControls.IntegerBox inbSets2;
+        private MyControls.MyPanel panSize2;
+        private MyControls.ComboList cmbSize25;
+        private MyControls.ComboList cmbSize20;
+        private MyControls.IntegerBox inbUnitSize25;
+        private MyControls.IntegerBox inbUnitSize21;
+        private MyControls.IntegerBox inbUnitSize24;
+        private MyControls.IntegerBox inbUnitSize22;
+        private MyControls.IntegerBox inbUnitSize20;
+        private MyControls.IntegerBox inbUnitSize23;
+        private MyControls.ComboList cmbSize22;
+        private MyControls.ComboList cmbSize24;
+        private MyControls.ComboList cmbSize21;
+        private MyControls.ComboList cmbSize23;
+        private MyControls.MyPanel panProduct3;
+        private MyControls.StrBox txtRemark3;
+        private MyControls.CurrencyBox dcbCost3;
+        private MyControls.ComboList cmbSizeSet3;
+        private MyControls.ComboList cmbColor3;
+        private MyControls.IntegerBox inbSets3;
+        private MyControls.IntegerBox inbUnits3;
+        private MyControls.CurrencyBox dcbAmount3;
+        private MyControls.MyPanel panSize3;
+        private MyControls.IntegerBox inbUnitSize35;
+        private MyControls.ComboList cmbSize35;
+        private MyControls.IntegerBox inbUnitSize31;
+        private MyControls.IntegerBox inbUnitSize34;
+        private MyControls.ComboList cmbSize30;
+        private MyControls.IntegerBox inbUnitSize30;
+        private MyControls.IntegerBox inbUnitSize32;
+        private MyControls.ComboList cmbSize32;
+        private MyControls.IntegerBox inbUnitSize33;
+        private MyControls.ComboList cmbSize34;
+        private MyControls.ComboList cmbSize33;
+        private MyControls.ComboList cmbSize31;
+        private MyControls.MyPanel panFootItem;
         private MyControls.CurrencyBox currencyBox3;
         private System.Windows.Forms.Button btnOKItem;
         private System.Windows.Forms.Button btnCancelItem;
         private MyControls.MyPanel BottomPanel;
         private System.Windows.Forms.Button btnEditItem;
         private MyControls.CurrencyBox dcbBilltotal;
-        private MyControls.MyCombo cmbCheckEmpEdit;
+        private MyControls.ComboList cmbCheckEmpEdit;
         private System.Windows.Forms.Button btnDeleteItem;
         private MyControls.CurrencyBox dcbBillAmount;
         private MyControls.CurrencyBox dcbDiscount;
         private System.Windows.Forms.Button btnAddNewItem;
-        private MyControls.MyCombo cmbCheckEmpView;
-        private MyControls.MyCombo cmbModelInfoEmpEdit;
-        private MyControls.MyCombo cmbBarcodeEmpView;
-        private MyControls.MyCombo cmbBarcodeEmp2Edit;
-        private MyControls.MyCombo cmbBarcodeEmp2View;
-        private MyControls.MyCombo cmbBarcodeEmpEdit;
-        private MyControls.MyCombo cmbModelInfoEmpView;
+        private MyControls.ComboList cmbCheckEmpView;
+        private MyControls.ComboList cmbModelInfoEmpEdit;
+        private MyControls.ComboList cmbBarcodeEmpView;
+        private MyControls.ComboList cmbBarcodeEmp2Edit;
+        private MyControls.ComboList cmbBarcodeEmp2View;
+        private MyControls.ComboList cmbBarcodeEmpEdit;
+        private MyControls.ComboList cmbModelInfoEmpView;
         private MyControls.MyPanel headPanel;
         private System.Windows.Forms.BindingNavigator buyBillnav;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
@@ -2839,9 +2917,9 @@ namespace PointOfSale
         private System.Windows.Forms.Button btnEdit;
         private MyControls.DateBox dtpBillDate;
         private MyControls.StrBox txtBillRemark;
-        private MyControls.MyCombo cmbSupplier;
-        private MyControls.MyCombo cmbBranch;
-        private MyControls.MyCombo cmbKeyInEmp;
+        private MyControls.ComboList cmbSupplier;
+        private MyControls.ComboList cmbBranch;
+        private MyControls.ComboList cmbKeyInEmp;
         private System.Windows.Forms.BindingSource bsBuy;
         private System.Windows.Forms.DataGridViewTextBoxColumn brandNameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn modelCodeDataGridViewTextBoxColumn;
